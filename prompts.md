@@ -79,8 +79,10 @@ This approach was particularly effective with stronger models such as GPT-4. As 
 >
 > **Step 1: What is the Abbazia di Nonantola?**  
 > The Abbazia di Nonantola (Abbey of Nonantola) is a historic Benedictine monastery located in the town of Nonantola, near Modena in northern Italy. It was a significant religious, cultural, and political center during the Middle Ages.
+> 
 > **Step 2: When was it founded?**  
 > The abbey was founded in the 8th century, more precisely in the year 752.
+> 
 > **Step 3: Who commissioned or founded it?**
 > The founder and commissioner of the abbey was:
 > ➤ Saint Anselm (Anselmo di Nonantola)
@@ -88,6 +90,7 @@ This approach was particularly effective with stronger models such as GPT-4. As 
 > • Anselm was a duke (duke of Friuli) before becoming a monk.  
 > •	Around 752, he founded the abbey with the support of King Aistulf.
 > •	The abbey received many privileges and became one of the most powerful monastic institutions in northern Italy.
+> 
 > **Step 4: Support from the Lombard king**  
 > •	King Aistulf of the Lombards played an important supporting role in the establishment of the abbey.
 > •	He donated land and resources, helping to ensure its prominence and autonomy.
@@ -107,9 +110,13 @@ This approach was particularly effective with stronger models such as GPT-4. As 
 > •	Abbots Commendatory: From 1449 onwards, the Abbey of Nonantola saw the beginning of the "Commenda" system. This meant that the abbot, known as an abbot commendatory (abate commendatario), was not necessarily a resident monk but an external figure, often appointed by the Pope or a secular ruler, who received the revenues of the abbey. These commendatory abbots effectively "commissioned" or oversaw the abbey's administration and assets, although their involvement in the spiritual life of the monastery varied greatly.
 > Notable commendatory abbots included:
 > •	Gurone d'Este (1449–1484)
+> 
 > •	Giuliano card. Della Rovere (1485–1503), who later became Pope Julius II.
+> 
 > •	San Carlo Borromeo (1560–1566)
+> 
 > •	Current Leadership: Today, the Abbazia di Nonantola is part of the Archdiocese of Modena-Nonantola. The current Archbishop-Abbot is Erio Castellucci. He serves as the spiritual and administrative head, effectively the "commissioner" in a modern sense, overseeing the abbey and its activities.
+> 
 > If you are looking for a specific historical period or a particular type of "commissioner," please provide more details, as the term can be interpreted in various ways for an institution with such a rich and long history.
 
 ---
