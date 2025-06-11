@@ -4,14 +4,14 @@ title: Abbazia di Nonantola
 ---
 
 <div style="text-align: center; margin-bottom: 20px;">
-  <a href="index.md">Topic</a> |
-  <a href="methodology.md">Methodology</a> |
-  <a href="sparql.md">SPARQL & Results</a> |
-  <a href="gaps.md">Gaps</a> |
-  <a href="prompts.md">LLM Prompts</a> |
-  <a href="triples.md">RDF Triples</a> |
-  <a href="challenges.md">Challenges</a> |
-  <a href="conclusion.md">Conclusion</a>
+  <a href="index.html">🏠 Home</a> |
+  <a href="topic.html">🏛️ Topic</a> |
+  <a href="methodology.html">⚒️ Methodology</a> |
+  <a href="gaps.html">📊 SPARQL&Results</a> |
+  <a href="prompts.html">💬 LLM Prompts</a> |
+  <a href="triples.html">🔗 RDF Triples</a> |
+  <a href="challenges.html">⚠️ Challenges</a> |
+  <a href="conclusion.html">✅ Conclusion</a>
 </div>
 
 # How We Identified the Information Gaps
