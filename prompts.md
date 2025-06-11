@@ -3,20 +3,16 @@ layout: default
 title: Abbazia di Nonantola
 ---
 
-<!-- Navigation Menu -->
-<nav>
-  <ul>
-    <li><a href="/index.html">Home</a></li>
-    <li><a href="/topic.html">Topic</a></li>
-    <li><a href="/methodology.html">Methodology</a></li>
-    <li><a href="/sparql.html">SPARQL & Results</a></li>
-    <li><a href="/gaps.html">Gaps</a></li>
-    <li><a href="/prompt.html">LLM Prompts</a></li>
-    <li><a href="/rdf.html">RDF Triples</a></li>
-    <li><a href="/challenges.html">Challenges</a></li>
-    <li><a href="/conclusion.html">Conclusion</a></li>
-</ul>
-</nav>
+<div style="text-align: center; margin-bottom: 20px;">
+  <a href="index.html">🏠 Home</a> |
+  <a href="topic.html">🏛️ Topic</a> |
+  <a href="methodology.html">⚒️ Methodology</a> |
+  <a href="sparql.html">📊 SPARQL&Results</a> |
+  <a href="gaps.html">🔍 Identifying Gaps</a> |
+  <a href="triples.html">🔗 RDF Triples</a> |
+  <a href="challenges.html">⚠️ Challenges</a> |
+  <a href="conclusion.html">✅ Conclusion</a>
+</div>
 
 # USE LLM TO VERIFY AND PRODUCE NEW KNOWLEDGE
 
