@@ -24,7 +24,7 @@ Our project followed a structured and multi-step methodology to explore and enri
    We chose a cultural heritage site that we believed could benefit from additional knowledge and visibility.
 
 2. **Exploring the ArCo Ontologies**  
-   We used the [ArCo SPARQL endpoint] (https://dati.cultura.gov.it/sparql) to find existing data about our topic within the ArCo ontologies.
+   We used the [ArCo SPARQL endpoint](https://dati.cultura.gov.it/sparql) to find existing data about our topic within the ArCo ontologies.
 
 3. **Building SPARQL Queries**  
    We developed several SPARQL queries using essential keywords to retrieve relevant information about [Abbazia di Nonantola](https://dati.beniculturali.it/lodview-arco/resource/HistoricOrArtisticProperty/0100210793.html).
@@ -36,7 +36,7 @@ Our project followed a structured and multi-step methodology to explore and enri
    We evaluated the documentation to detect where the information could be improved or extended.
 
 6. **Prompt Engineering for LLMs**  
-   We crafted prompts using three prompting strategies to extract new facts from [Gemini] (https://gemini.google.com/app) and [Chat GPT] (https://chatgpt.com/).
+   We crafted prompts using three prompting strategies to extract new facts from [Gemini](https://gemini.google.com/app) and [Chat GPT](https://chatgpt.com/).
 
 7. **Comparing LLM Outputs**  
    We analyzed and compared the answers provided by the two language models to ensure consistency and richness.
