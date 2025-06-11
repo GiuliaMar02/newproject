@@ -1,6 +1,6 @@
 ---
 layout: default
-title: SPARQL & Results
+title: Abbazia di Nonantola
 ---
 
 <div style="text-align: center; margin-bottom: 20px;">
@@ -14,7 +14,7 @@ title: SPARQL & Results
   <a href="conclusion.html">✅ Conclusion</a>
 </div>
 
-# RESEARCH ABOUT OUR TOPIC
+# SPARQL Queries & Results
 
 ## Query 1 — Does ArCo contain our topic?
 
