@@ -5,7 +5,7 @@ title: Abbazia di Nonantola
 
 <nav>
   <ul style="display: flex; gap: 15px; list-style: none; padding: 0; margin: 1em 0;">
-    <li><a href="topic.html">Topic</a></li>
+    <li><a href="index.html">Home</a></li>
     <li><a href="methodology.html">Methodology</a></li>
     <li><a href="sparql.html">SPARQL & Results</a></li>
     <li><a href="gaps.html">Identifying Gaps</a></li>
