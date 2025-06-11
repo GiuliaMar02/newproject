@@ -1,4 +1,5 @@
-title: Leap Day theme
-description: Leap Day is a theme for GitHub Pages.
+title: Slate theme
+description: Slate is a theme for GitHub Pages.
 show_downloads: true
-theme: jekyll-theme-leap-day
+google_analytics:
+theme: jekyll-theme-slate
