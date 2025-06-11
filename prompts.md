@@ -85,10 +85,15 @@ This approach was particularly effective with stronger models such as GPT-4. As 
 > 
 > **Step 3: Who commissioned or founded it?**
 > The founder and commissioner of the abbey was:
+> 
 > ➤ Saint Anselm (Anselmo di Nonantola)
+> 
 > • He was a Lombard nobleman and the brother-in-law of King Aistulf of the Lombards.
-> • Anselm was a duke (duke of Friuli) before becoming a monk.  
+> 
+> • Anselm was a duke (duke of Friuli) before becoming a monk.
+> 
 > •	Around 752, he founded the abbey with the support of King Aistulf.
+> 
 > •	The abbey received many privileges and became one of the most powerful monastic institutions in northern Italy.
 > 
 > **Step 4: Support from the Lombard king**  
@@ -120,3 +125,4 @@ This approach was particularly effective with stronger models such as GPT-4. As 
 > If you are looking for a specific historical period or a particular type of "commissioner," please provide more details, as the term can be interpreted in various ways for an institution with such a rich and long history.
 
 ---
+
