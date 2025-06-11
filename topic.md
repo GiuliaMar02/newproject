@@ -3,9 +3,18 @@ layout: default
 title: Abbazia di Nonantola
 ---
 
-[Topic](topic.html) • [Methodology](methodology.html) • [SPARQL & Results](sparql.html) • [Identifying Gaps](gaps.html) • [LLM Prompts](prompts.html) • [RDF Triples](rdf.html) • [Challenges](challenges.html) • [Conclusion](conclusion.html)
-
----
+<nav>
+  <ul style="display: flex; gap: 15px; list-style: none; padding: 0; margin: 1em 0;">
+    <li><a href="topic.html">Topic</a></li>
+    <li><a href="methodology.html">Methodology</a></li>
+    <li><a href="sparql.html">SPARQL & Results</a></li>
+    <li><a href="gaps.html">Identifying Gaps</a></li>
+    <li><a href="prompts.html">LLM Prompts</a></li>
+    <li><a href="rdf.html">RDF Triples</a></li>
+    <li><a href="challenges.html">Challenges</a></li>
+    <li><a href="conclusion.html">Conclusion</a></li>
+  </ul>
+</nav>
 
 # Abbazia di Nonantola  
 _A Hidden Treasure in the Province of Modena_
