@@ -51,3 +51,46 @@ The query confirmed that ArCo does contain entities related to our topic. These 
 [Formella](https://dati.beniculturali.it/lodview-arco/resource/HistoricOrArtisticProperty/0800221017-1_14.html)
 [Veduta abside](https://dati.beniculturali.it/lodview-arco/resource/HistoricOrArtisticProperty/0100210793.html)
 
+---
+
+## Query 2 — Finding depictions of the Abbazia
+
+In this query, we aimed to find **visual representations** (e.g., images) of **[Abbazia di Nonantola](https://dati.beniculturali.it/lodview-arco/resource/HistoricOrArtisticProperty/0100210793.html)**.  
+We used the **`OPTIONAL`** keyword to retrieve data only if available (i.e., if a depiction exists). We removed `DISTINCT` and used `*` to obtain all possible variables in the results.
+
+### Explanation of keywords used:
+- **`OPTIONAL`**: allows inclusion of additional data (e.g., depictions) if they are available, without excluding results where this information is missing.
+- **`*`**: retrieves all available variables for each match.
+- **Two `FILTER(REGEX)`**: allow us to narrow down results using both terms "Abbazia" and "Nonantola".
+
+---
+
+### 🔍 SPARQL Query:
+
+```sparql
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX arco: <https://w3id.org/arco/ontology/arco/>
+PREFIX a-cd: <https://w3id.org/arco/ontology/context-description/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+SELECT * 
+WHERE { 
+  ?cp a arco:HistoricOrArtisticProperty ; 
+      rdfs:label ?l .
+  FILTER(REGEX(?l, "Abbazia", "i"))
+  FILTER(REGEX(?l, "Nonantola", "i"))
+  OPTIONAL { ?cp foaf:depiction ?depiction }
+}
+```
+
+### ✅ Results
+The query returned the same IRIs found in Query 1, but this time it included depictions. These are useful for enriching the knowledge graph with visual content.
+
+### 📸 Screenshot of Results
+
+![Query 2 results](assets/images/query2_results.png)
+
+🖼️ Depictions Found
+![Screenshot 1](assets/images/screenshot1.png)
+![Screenshot 2](assets/images/screenshot2.png)
