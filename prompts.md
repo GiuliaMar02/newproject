@@ -126,3 +126,65 @@ This approach was particularly effective with stronger models such as GPT-4. As 
 
 ---
 
+---
+
+### Refining the Answer with Few-shot Chain-of-Thought Prompting
+
+Since [Gemini](https://gemini.google.com/) initially gave a rather ambiguous answer and failed to mention **Saint Anselm**, we decided to apply a **Few-shot Chain-of-Thought** technique.
+
+This involves showing the model a prior example of the reasoning process for a similar question. It helps the model better understand the format of the expected answer and produce more precise reasoning.
+
+---
+
+**Few-shot Prompt:**
+
+Q1: Who commissioned the Sistine Chapel ceiling?  
+A1:  
+Step 1: The Sistine Chapel is located in Vatican City and is famous for its ceiling painted by Michelangelo.  
+Step 2: Michelangelo painted the ceiling between 1508 and 1512.  
+Step 3: At that time, the pope was Julius II.  
+Step 4: Pope Julius II commissioned Michelangelo to paint the ceiling as part of a renovation project.  
+**Final Answer: Pope Julius II.**
+
+Q2: Who was the commissioner of the Abbazia di Nonantola? Let’s think step by step.
+
+---
+
+### [Gemini](https://gemini.google.com/) Answer:
+
+> The question of who "commissioned" the Abbazia di Nonantola can have multiple answers depending on the historical period and what specific aspect of the abbey is being referred to, as the term "commissioner" can encompass various roles from founder to later administrators.  
+>
+> • **Step 1: The Foundation.** The Abbazia di Nonantola was founded in 752 AD as a Benedictine monastery.
+> 
+> • **Step 2: The Founder.** The founder and first abbot of the Abbazia di Nonantola was **Saint Anselm**, brother-in-law of King Aistulf of the Lombards.
+>  
+> • **Step 3: Later Commissions and Administration.** Over the centuries, various individuals held significant roles in the abbey's development and administration. From 1449 onwards, the abbey came under the system of commendatory abbots (abati commendatari). These were external figures, often appointed by the Pope, who effectively oversaw the abbey's assets and administration. Notable commendatory abbots include Gurone d'Este (1449–1484), Giuliano card. Della Rovere (1485–1503, who later became Pope Julius II), and San Carlo Borromeo (1560–1566). During their tenure, specific commissions for works within the abbey might have been made by them, such as the main altar by Jacopo Silla de Longhi (1568-1572) on commission by Abbot Guido Ferreri.** 
+>
+> • **Step 4: Current Leadership.** Today, the Abbazia is part of the Archdiocese of Modena-Nonantola. The current Archbishop-Abbot, who serves as the spiritual and administrative head, is **Erio Castellucci**.
+
+> ✅ **Final Answer:**  
+> The original founder of the Abbazia di Nonantola was Saint Anselm. Later, during the commenda system, various commendatory abbots oversaw its administration and commissioned works, including Abbot Guido Ferreri. In the modern era, the spiritual and administrative head is the Archbishop-Abbot, currently Erio Castellucci.
+
+---
+
+### Evaluation
+
+- This answer is **more complete and historically structured** compared to the previous attempt by Gemini.
+- The mention of **Saint Anselm** finally appears, showing that our few-shot example improved the model's comprehension of the question and expected reasoning.
+- The model also provided information about **later commissioners**, such as commendatory abbots and modern leadership.
+- Unlike ChatGPT, Gemini also **included a picture**, enhancing the visual aspect of the answer.
+- Due to the **length and completeness** of the answers, we decided to **paste the transcriptions** instead of screenshots for clarity.
+
+---
+
+### Cross-Validation
+
+The official site of the abbey confirms the historical foundation:
+
+> 🏛️ [Abbazia di Nonantola – Official Website](https://abbazianonantola.it/)  
+>  
+> **ASTOLFO E ANSELMO: LA FONDAZIONE MONASTICA E LA SUA DEDICAZIONE**  
+>  
+> La fondazione dell’abbazia di Nonantola si colloca nel quadro storico - politico dell’insediamento dei Longobardi nel modenese. All’origine vi fu una donazione di terre: nel 752 Astolfo donò al cognato Anselmo, “olim dux militum, nunc dux monachorum”, la terra definita nelle fonti “locum Nonantulae”. Dopo un periodo di permanenza a Fanano, sull’appennino modenese, dove aveva fondato un ospizio nei pressi del Passo della Croce Arcana, Anselmo, su incarico di Astolfo, si trasferì a Nonantola coi suoi monaci. Qui vi fondò un monastero: si tratta di uno dei monasteri più insigni ed antichi della Val Padana, forse la prima vera e propria fondazione benedettina in tutto il nord Italia. I futuri sviluppi del monastero finirono per superare gli intenti e le previsioni dei suoi fondatori. Il monastero, dotato di numerosissime pertinenze la cui estensione non era inferiore ai 400 chilometri quadrati, godeva della proprietà della pesca, dei mulini, dei ponti, dei boschi, dei pascoli e delle numerose chiese e cappelle poste nel rispettivo territorio, con diritti fiscali che davano all’abate anche la facoltà di riscuotere i contributi dei sudditi del monastero.
+
+---
