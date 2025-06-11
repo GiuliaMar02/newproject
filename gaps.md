@@ -16,7 +16,7 @@ title: Abbazia di Nonantola
 
 # How We Identified the Information Gaps
 
-## Identification of the First Gap
+## 1. Identification of the First Gap
 
 On the basis of **Query 4**, we decided to verify whether there is truly no *Cultural Property* with the label “Abbazia di San Silvestro”, so we launched another query using the keyword **ASK**.
 
@@ -86,7 +86,7 @@ We are now motivated to identify or create a more suitable predicate to represen
 
 Abbazia di Nonantola → hasAlternativeName → “Abbazia di San Silvestro”
 
-## Identification of the Second Gap
+## 2. Identification of the Second Gap
 
 Based on the results of **Query 6**, we were able to identify a missing property in the description of the **Abbazia di Nonantola**.
 
@@ -152,7 +152,7 @@ This validation supports our previous investigation:
 The cultural property Abbazia di Nonantola is missing information about its committent.
 To enrich its RDF description, the predicate a-cd:hasCommittent should be added, pointing to the appropriate agent.
 
-## Identification of the Third Gap
+## 3. Identification of the Third Gap
 
 To find additional properties useful for enriching the cultural property **“Abbazia di Nonantola”**, we decided to examine **“Basilica di San Pietro”**, one of the most well-documented and relevant cultural properties in Italy.
 
@@ -215,3 +215,47 @@ The result was false, confirming that there are currently no affixed elements as
 
 This identifies a third gap: missing inscription data.
 In the following phases of the project, we will consult LLMs to verify the historical existence of any inscriptions and, if applicable, add this missing information using the appropriate vocabulary.
+
+### 4. Identification of the Fourth Gap
+
+We launched a general query to retrieve all cultural properties connected to **Nonantola**, in order to find whether there are components or properties **indirectly related** to the Abbey of Nonantola.  
+Our aim was to identify properties that could be directly connected to the Abbey through the predicate `arco:isCulturalPropertyComponentOf`.
+
+**QUERY 12**  
+```sparql
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX arco: <https://w3id.org/arco/ontology/arco/> 
+PREFIX a-cd: <https://w3id.org/arco/ontology/context-description/> 
+ 
+SELECT DISTINCT ?cp 
+WHERE { 
+  ?cp a arco:HistoricOrArtisticProperty ; 
+      rdfs:label ?l . 
+  FILTER(REGEX(?l, "Nonantola", "i"))
+}
+```
+
+### Results:
+
+We found 15 results containing cultural properties related to Nonantola.
+
+Among them, we selected the first one:
+Astolfo and Anselmo, whose IRI led us to the following predicate: [arco:isCulturalPropertyComponentOf](https://dati.beniculturali.it/lodview-arco/ontology/arco/isCulturalPropertyComponentOf)
+
+![result](assets/images/gaps_12.png)
+
+We observed that [Astolfo and Anselmo](https://dati.beniculturali.it/lodview-arco/resource/HistoricOrArtisticProperty/0800221017-1_13.html) is a component of the cultural property “Portale” (Portal).
+
+However, the description found in the IRI of Portale mentions the Abbey and the Coverage class indicates Nonantola, but there is no clear or explicit triple connecting this portal directly to the Abbazia di Nonantola.
+
+![result](assets/images/gaps_13.png)
+
+![result](assets/images/gaps_14.png)
+
+### Conclusion
+
+This reveals a fourth gap: the missing relation between components and the Abbey.
+
+To be more semantically precise, we propose to create a new triple in ArCo that explicitly connects the [IRI Portale](https://dati.beniculturali.it/lodview-arco/resource/HistoricOrArtisticProperty/0800221017-0.html) to the Abbey of Nonantola using the predicate:[arco:isCulturalPropertyComponentOf](https://dati.beniculturali.it/lodview-arco/ontology/arco/isCulturalPropertyComponentOf)
+
+This would enrich the knowledge graph by strengthening the structural hierarchy of components within the Abbey.
