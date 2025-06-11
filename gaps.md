@@ -7,7 +7,7 @@ title: Abbazia di Nonantola
   <a href="index.html">🏠 Home</a> |
   <a href="topic.html">🏛️ Topic</a> |
   <a href="methodology.html">⚒️ Methodology</a> |
-  <a href="gaps.html">📊 SPARQL&Results</a> |
+  <a href="sparql.html">📊 SPARQL&Results</a> |
   <a href="prompts.html">💬 LLM Prompts</a> |
   <a href="triples.html">🔗 RDF Triples</a> |
   <a href="challenges.html">⚠️ Challenges</a> |
