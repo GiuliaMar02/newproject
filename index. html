@@ -1,0 +1,67 @@
+---
+layout: default
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Abbazia di Nonantola – KE4H Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Abbazia di Nonantola</h1>
+    <h2>A Hidden Treasure in the Province of Modena</h2>
+  </header>
+
+  <nav>
+    <h3>Sections:</h3>
+    <ul>
+      <li><a href="topic.html">Topic</a></li>
+      <li><a href="methodology.html">Methodology</a></li>
+      <li><a href="sparql.html">SPARQL & Results</a></li>
+      <li><a href="gaps.html">Identifying Gaps</a></li>
+      <li><a href="prompts.html">LLM Prompts</a></li>
+      <li><a href="rdf.html">RDF Triples</a></li>
+      <li><a href="challenges.html">Challenges</a></li>
+      <li><a href="conclusion.html">Conclusion</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Introduction</h2>
+      <p>
+        This project was developed within the framework of the KE4H (Knowledge Engineering for the Humanities) course at the University of Bologna. 
+        Our goal was to explore how the combination of SPARQL queries and Large Language Models (LLMs) can enrich an existing cultural heritage knowledge graph with new, meaningful content.
+      </p>
+      <p>
+        We chose to focus on the <strong>Abbazia di Nonantola</strong>, a monumental Benedictine abbey in the province of Modena, which holds remarkable historical, religious, and artistic value. 
+        Despite its relevance, it is still underrepresented in structured knowledge graphs, which makes it a perfect candidate for enrichment through semantic technologies and AI-powered language models.
+      </p>
+      <p>
+        As our base knowledge graph, we selected <a href="http://wit.istc.cnr.it/arco/" target="_blank">ArCo</a> – the official ontology network and RDF dataset of the Italian Ministry of Culture. 
+        ArCo offers a rich and well-structured representation of Italy’s cultural heritage and provides an excellent SPARQL endpoint for advanced semantic exploration. 
+        Its modular architecture and domain-specific ontologies made it a strong choice for our project’s objectives, especially in the context of tangible heritage.
+      </p>
+    </section>
+
+    <section>
+      <h2>Our Team</h2>
+      <p>This project was collaboratively developed by:</p>
+      <ul>
+        <li><strong>Alice Montorsi</strong></li>
+        <li><strong>Giulia Manenti</strong></li>
+        <li><strong>Giulia Marani</strong></li>
+        <li><strong>Matilde Ciarrocchi</strong></li>
+      </ul>
+      <p>All team members contributed to data analysis, SPARQL design, LLM prompting, and final website production.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 KE4H Project – University of Bologna</p>
+  </footer>
+</body>
+</html>
