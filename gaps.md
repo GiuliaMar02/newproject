@@ -151,3 +151,67 @@ As shown above, the result is false, confirming that no committent is currently 
 This validation supports our previous investigation:
 The cultural property Abbazia di Nonantola is missing information about its committent.
 To enrich its RDF description, the predicate a-cd:hasCommittent should be added, pointing to the appropriate agent.
+
+## Identification of the Third Gap
+
+To find additional properties useful for enriching the cultural property **“Abbazia di Nonantola”**, we decided to examine **“Basilica di San Pietro”**, one of the most well-documented and relevant cultural properties in Italy.
+
+We ran the following query to retrieve all cultural properties labeled as "Basilica di San Pietro":
+
+**QUERY 10**  
+```sparql
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX arco: <https://w3id.org/arco/ontology/arco/>
+PREFIX a-cd: <https://w3id.org/arco/ontology/context-description/>
+
+SELECT DISTINCT ?cp
+WHERE {
+  ?cp a arco:HistoricOrArtisticProperty ;
+      rdfs:label ?l .
+  FILTER(REGEX(?l, "Basilica di San Pietro", "i"))
+}
+```
+
+### RESULT:
+
+![result](assets/images/gaps_9.png)
+
+From the results, we identified the property arco:hasAffixedElement, which refers to inscriptions or other affixed elements.
+
+### Inspection of Related IRIs
+By clicking on one of the affixed element IRIs — specifically, [Iscrizione 1](https://dati.beniculturali.it/lodview-arco/resource/Inscription/0900476442-inscription-1.html) — we explored how ArCo models inscriptions:
+
+![result](assets/images/gaps_10.png)
+
+### Conclusion
+
+This analysis revealed that Abbazia di Nonantola does not yet include affixed elements such as inscriptions.
+The property arco:hasAffixedElement could be used to describe any inscriptions present on the abbey, thus enhancing its semantic representation in ArCo.
+
+### Verification for Abbazia di Nonantola
+
+We then launched a query aimed at checking whether Abbazia di Nonantola contains any affixed elements, similarly to San Pietro.
+
+**QUERY 11**
+```sparql
+PREFIX arco: <https://w3id.org/arco/ontology/arco/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+ASK 
+WHERE {
+  ?culturalProperty a arco:HistoricOrArtisticProperty ;
+                    rdfs:label "Abbazia di Nonantola"@it ;
+                    arco:hasAffixedElement ?affixedElement .
+}
+```
+
+### Result:
+
+![result](assets/images/gaps_11.png)
+
+The result was false, confirming that there are currently no affixed elements associated with Abbazia di Nonantola in the ArCo Knowledge Graph.
+
+### Conclusion
+
+This identifies a third gap: missing inscription data.
+In the following phases of the project, we will consult LLMs to verify the historical existence of any inscriptions and, if applicable, add this missing information using the appropriate vocabulary.
