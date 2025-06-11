@@ -188,3 +188,126 @@ The official site of the abbey confirms the historical foundation:
 > La fondazione dell’abbazia di Nonantola si colloca nel quadro storico - politico dell’insediamento dei Longobardi nel modenese. All’origine vi fu una donazione di terre: nel 752 Astolfo donò al cognato Anselmo, “olim dux militum, nunc dux monachorum”, la terra definita nelle fonti “locum Nonantulae”. Dopo un periodo di permanenza a Fanano, sull’appennino modenese, dove aveva fondato un ospizio nei pressi del Passo della Croce Arcana, Anselmo, su incarico di Astolfo, si trasferì a Nonantola coi suoi monaci. Qui vi fondò un monastero: si tratta di uno dei monasteri più insigni ed antichi della Val Padana, forse la prima vera e propria fondazione benedettina in tutto il nord Italia. I futuri sviluppi del monastero finirono per superare gli intenti e le previsioni dei suoi fondatori. Il monastero, dotato di numerosissime pertinenze la cui estensione non era inferiore ai 400 chilometri quadrati, godeva della proprietà della pesca, dei mulini, dei ponti, dei boschi, dei pascoli e delle numerose chiese e cappelle poste nel rispettivo territorio, con diritti fiscali che davano all’abate anche la facoltà di riscuotere i contributi dei sudditi del monastero.
 
 ---
+
+---
+
+## Third Missing Information: Are there any inscriptions at the Abbazia di Nonantola?
+
+To find whether the **Abbazia di Nonantola** contains any **inscriptions**, we applied a **few-shot prompting technique** with both [ChatGPT](https://chat.openai.com/) and [Gemini](https://gemini.google.com/).
+
+---
+
+### Why Few-shot?
+
+This technique is useful when:
+
+- A **zero-shot prompt** doesn’t yield reliable results;
+- The task requires a **specific format or nuanced understanding**;
+- We want to **guide** the model with **concrete examples** to produce richer and more relevant responses.
+
+In our case, the term **“inscriptions”** could refer to architectural epigraphy, tombstones, liturgical texts, or decorative elements. To avoid ambiguous or overly general responses, we provided examples from similar religious sites to help the model mimic the intended format.
+
+---
+
+### Few-shot Prompt 3.1
+
+**Q: Are there any inscriptions in the Basilica of San Pietro?**  
+**A:** Yes, there are many inscriptions. One example is the Inscription on the façade above the central entrance:  
+**"IN HONOREM PRINCIPIS APOST PAVLVS V BVRGHESIVS ROMANVS PONTIFEX MAXIMVS ANNO MDCXII PONT VII".**  
+The translation is: “In honor of the Prince of the Apostles, Paul V Borghese, Roman, Supreme Pontiff, in the year 1612, the seventh of his pontificate.”
+
+**Q: Are there any inscriptions in the Milan Cathedral?**  
+**A:** Yes, a famous one is the epigraphical inscription in the dome saying:  
+**"TERRIBILIS EST LOCUS ISTE"**,  
+translated as: “This place is awesome and full of reverence.”
+
+**Q: Are there any inscriptions in the Abbazia di Nonantola?**  
+**A:** ...
+
+---
+
+### [ChatGPT](https://chat.openai.com/) Answer:
+
+![Screenshot](assets/images/prompt_3.png)  
+![Screenshot](assets/images/prompt_4.png)
+
+ChatGPT provided **three responses**:
+
+- The **first answer** closely follows the prompt format: it gives a **Latin inscription** and its **translation**.
+- The **second and third** answers discuss more general inscriptions, such as **epitaphs** and their historical context, **without quoting any specific examples**.
+
+This makes the first answer valuable, but shows the model deviated from the expected format in the remaining two.
+
+---
+
+### [Gemini](https://gemini.google.com/) Answer:
+
+![Screenshot](assets/images/prompt_5.png)  
+![Screenshot](assets/images/prompt_6.png)  
+![Screenshot](assets/images/prompt_7.png)
+
+Gemini followed the structure **more faithfully** than ChatGPT:
+
+- It provided **three distinct Latin inscriptions** from the abbey;
+- Each was accompanied by an **English translation**, precisely as modeled in the examples;
+- This confirms the **effectiveness of few-shot prompting** when we need detailed and structured data.
+
+---
+
+---
+
+### Narrowing Down with Specificity: Adding “Epigraphical”
+
+To guide the models more clearly, especially [ChatGPT](https://chat.openai.com/), we refined our question by specifying **“epigraphical inscriptions”**. This subtle but crucial change helps LLMs focus strictly on architectural or monumental inscriptions, excluding more general mentions such as epitaphs or decorative writing.
+
+---
+
+### Few-shot Prompt 3.2 (Specific)
+
+**Q: Are there any epigraphical inscriptions in the Basilica of San Pietro?**  
+**A:** Yes, there are many inscriptions. One example is the Inscription on the façade above the central entrance:  
+**"IN HONOREM PRINCIPIS APOST PAVLVS V BVRGHESIVS ROMANVS PONTIFEX MAXIMVS ANNO MDCXII PONT VII".**  
+The translation is: “In honor of the Prince of the Apostles, Paul V Borghese, Roman, Supreme Pontiff, in the year 1612, the seventh of his pontificate.”
+
+**Q: Are there any epigraphical inscriptions in the Milan Cathedral?**  
+**A:** Yes, a famous one is the epigraphical inscription in the dome saying:  
+**"TERRIBILIS EST LOCUS ISTE"**,  
+translated as: “This place is awesome and full of reverence.”
+
+**Q: Are there any epigraphical inscriptions in the Abbazia di Nonantola?**  
+**A:** ...
+
+---
+
+### [ChatGPT](https://chat.openai.com/) Answer:
+
+![Screenshot](assets/images/prompt_8.png)  
+![Screenshot](assets/images/prompt_9.png)
+
+- ChatGPT **did not change its strategy** despite the added adjective.
+- It reused the same structure as in Prompt 3.1 and provided **only one new inscription**, in Latin, different from the previous example.
+- Even if the response was not fully aligned with our expectation (structured list of examples), it still provided **a valid inscription**, so we **did not proceed further** with ChatGPT for this step.
+
+---
+
+### [Gemini](https://gemini.google.com/) Answer:
+
+![Screenshot](assets/images/prompt_10.png)  
+![Screenshot](assets/images/prompt_11.png)  
+![Screenshot](assets/images/prompt_12.png)
+
+- Gemini once again followed the few-shot pattern and returned **three epigraphical inscriptions**.
+- However, the **first example was written in Italian**:  
+  *"Le alte volte del tempio crollarono nel millecentodiciassettesimo anno dalla nascita del Redentore e quattro anni dopo si cominciò a ricostruirle."*  
+  This seemed **unusual**, since historical inscriptions of this kind were typically in **Latin**.
+- To investigate further, we tested Gemini with a **zero-shot prompt**, asking for the **Latin version** of this sentence:
+  > **Q:** Can you tell me the Latin version of this inscription?:  
+  > *"Le alte volte del tempio crollarono nel millecentodiciassettesimo anno dalla nascita del Redentore e quattro anni dopo si cominciò a ricostruirle."*
+
+![Screenshot](assets/images/prompt_13.png)
+
+So now we have another example to use for our triples in the next step.
+•	Here we can see some other inscriptions of the abbey: [https://www.marcostucchi.com/Articoli/AbbaziaNonantola/index_en.html](https://www.marcostucchi.com/Articoli/AbbaziaNonantola/index_en.html) 
+
+---
+
