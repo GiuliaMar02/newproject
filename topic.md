@@ -1,3 +1,8 @@
+---
+layout: default
+title: Abbazia di Nonantola
+---
+
 # Topic: Abbazia di Nonantola  
 _A Hidden Treasure in the Province of Modena_
 
