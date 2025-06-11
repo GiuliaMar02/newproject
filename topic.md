@@ -7,11 +7,11 @@ title: Abbazia di Nonantola
   <a href="index.html">🏠 Home</a> |
   <a href="methodology.html">⚒️ Methodology</a> |
   <a href="sparql.html">📊 SPARQL&Results</a> |
-  <a href="gaps.md">🔍 Identifying Gaps</a> |
-  <a href="prompts.md">💬 LLM Prompts</a> |
-  <a href="triples.md">🔗 RDF Triples</a> |
-  <a href="challenges.md">⚠️ Challenges</a> |
-  <a href="conclusion.md">✅ Conclusion</a>
+  <a href="gaps.html">🔍 Identifying Gaps</a> |
+  <a href="prompts.html">💬 LLM Prompts</a> |
+  <a href="triples.html">🔗 RDF Triples</a> |
+  <a href="challenges.html">⚠️ Challenges</a> |
+  <a href="conclusion.html">✅ Conclusion</a>
 </div>
 
 # Abbazia di Nonantola  
