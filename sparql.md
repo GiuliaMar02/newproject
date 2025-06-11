@@ -4,9 +4,9 @@ title: SPARQL & Results
 ---
 
 <div style="text-align: center; margin-bottom: 20px;">
-  <a href="index.html">🏛️ Topic</a> |
-  <a href="methodology.md">🛠️ Methodology</a> |
-  <a href="sparql.md">📊 SPARQL & Results</a> |
+  <a href="index.html">🏠 Home</a> |
+  <a href="topic.html">🏛️ Topic</a> |
+  <a href="methodology.html">⚒️ Methodology</a> |
   <a href="gaps.md">🔍 Identifying Gaps</a> |
   <a href="prompts.md">💬 LLM Prompts</a> |
   <a href="triples.md">🔗 RDF Triples</a> |
