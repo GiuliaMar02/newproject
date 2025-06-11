@@ -45,7 +45,7 @@ The query confirmed that ArCo does contain entities related to our topic. These 
 
 ### 📸 Screenshot of Results
 
-[Query 1 results](assets/images/query1_results.png)
+![Query 1 results](assets/images/query1_results.png)
 
 ### 🧾 IRIs Found
 [Formella](https://dati.beniculturali.it/lodview-arco/resource/HistoricOrArtisticProperty/0800221017-1_14.html)
