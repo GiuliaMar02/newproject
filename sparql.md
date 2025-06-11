@@ -214,6 +214,7 @@ WHERE {
   FILTER(REGEX(?l, "abbazia", "i"))  
 }
 LIMIT 50
+```
 
 ### ❌ Results
 
@@ -269,11 +270,8 @@ The query generated a long list of predicate-object pairs related to various abb
 
 Among the missing aspects we looked for were:
 
-Who commissioned the abbey (committent)
+- Who commissioned the abbey (committent)
+- Architectural style
+- Historical function or symbolic meaning
 
-Architectural style
-
-Historical function or symbolic meaning
-
-📌 A full discussion of this analysis is available in the section:
-➡️ STEP 2 – Identification of the second missing information in the [Identifying Gaps](gaps.md) page.
+### 📌 A full discussion of this analysis is available in the section: [Identifying Gaps](gaps.md) page.
