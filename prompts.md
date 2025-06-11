@@ -311,3 +311,53 @@ So now we have another example to use for our triples in the next step.
 
 ---
 
+---
+
+### Fourth Missing Information: Is there another abbey in Nonantola?
+
+**4. ZERO-SHOT PROMPTING TECHNIQUE**  
+In this case, we used a simple and direct question without any examples or instructions — a classic zero-shot prompt. The reason is that we are asking a **binary factual question**: does another abbey exist in Nonantola apart from the well-known one?
+
+This is not a task that requires interpretation, examples, or multiple-step logic. The model only needs to **search and return a straightforward answer** regarding the **presence of another abbey in a specific location**.
+
+This is where **zero-shot** is at its best:  
+- **Efficient**  
+- **Direct**  
+- **Suitable for narrow-scope questions**
+
+---
+
+**Prompt:**
+> **Q: Is there another abbey in Nonantola, apart from the Abbazia di Nonantola?**
+
+---
+
+### [ChatGPT](https://chat.openai.com/) Answer:
+
+![Screenshot](assets/images/prompt_14.png)  
+![Screenshot](assets/images/prompt_15.png)
+
+[ChatGPT](https://chat.openai.com/) gives us an overview of the abbey and at the end specifies that it is the sole abbey in Nonantola.
+
+---
+
+### [Gemini](https://gemini.google.com/) Answer:
+
+![Screenshot](assets/images/prompt_16.png)  
+![Screenshot](assets/images/prompt_17.png)
+
+- The two answers are quite similar, as both start with a clear **“no”** and then proceed to give brief historical context.  
+- Both mention other religious structures or buildings in the **area around Nonantola**, but confirm there is **only one abbey** in the town.  
+- This confirms that the subject found in “ambito Nonantoliano” refers only to the **Abbazia di Nonantola / San Silvestro**.
+- As always, [Gemini](https://gemini.google.com/) includes an image in its response.
+
+---
+
+### General Considerations
+
+- When the question is **simple and direct**, both [Gemini](https://gemini.google.com/) and [ChatGPT](https://chat.openai.com/) give accurate and reliable answers — the **zero-shot technique** works well in such cases.
+- In **more complex questions**, [Gemini](https://gemini.google.com/) tends to be less structured and clear (see the second missing information), whereas [ChatGPT](https://chat.openai.com/) provides better reasoning and explanation via the **Chain-of-Thought** technique.
+- However, when **guided by few-shot prompting**, [Gemini](https://gemini.google.com/) proves to be capable of answering correctly and precisely, following the structure of the prompt (see third missing information). [ChatGPT](https://chat.openai.com/), in contrast, doesn’t always follow the format consistently.
+- [Gemini](https://gemini.google.com/) usually includes **images and links**, while [ChatGPT](https://chat.openai.com/) includes **source links** to the websites used for its responses.
+
+---
