@@ -142,3 +142,138 @@ This alternative name is highly relevant and valuable for enriching its semantic
 [Subject 2](https://w3id.org/arco/resource/Subject/9a1f6896bfa19393dbe4b1c276a4919d)
 
 [Subject 3](https://w3id.org/arco/resource/Subject/c17e71b0d26dba752b65e19fd7bef43c)
+
+---
+
+## Query 4 — Using UNION to retrieve multiple naming patterns
+
+In this query, we explored the possibility that **"Abbazia di Nonantola"** and **"Abbazia di San Silvestro"** might refer to the same cultural property, but be labeled differently in ArCo.
+
+We used the keyword **`UNION`** to capture **either** name. This helps us find alternative naming patterns that could reveal duplicated or misclassified entries.
+
+---
+
+### 🧠 Explanation of keyword used:
+- **`UNION`**: allows combining two different patterns in a single query. If either pattern matches, the result is included. It’s useful for comparing multiple naming conventions or label variations.
+
+---
+
+### 🔍 SPARQL Query:
+
+```sparql
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX arco: <https://w3id.org/arco/ontology/arco/>
+PREFIX a-cd: <https://w3id.org/arco/ontology/context-description/>
+
+SELECT DISTINCT ?cp
+WHERE {
+  {
+    ?cp a arco:HistoricOrArtisticProperty ;
+        rdfs:label ?l .
+    FILTER(REGEX(?l, "Abbazia di Nonantola", "i"))
+  }
+  UNION
+  {
+    ?cp a arco:HistoricOrArtisticProperty ;
+        rdfs:label ?l .
+    FILTER(REGEX(?l, "Abbazia di San Silvestro", "i"))
+  }
+}
+```
+
+### ✅ Results
+The query returned the same two IRIs found in Query 1, which means that "Abbazia di San Silvestro" does not exist as a Cultural Property (cp), only as a Subject (as seen in Query 3). This confirms that ArCo represents only one cultural property under the IRI for Abbazia di Nonantola.
+
+---
+
+## Query 5 — General search for “Abbazia” entities
+
+After gathering specific data about **Abbazia di Nonantola**, we wanted to broaden our research by exploring **other abbeys** within the ArCo ontology. This comparison could help us identify **additional information** that might be missing from our abbey's description.
+
+We ran a query using only the word **“abbazia”**, expecting many results. For that reason, we added the keyword `LIMIT` to avoid overloading the output.
+
+---
+
+### 🧠 Explanation of keyword used:
+- **`FILTER(REGEX(?l, "abbazia", "i"))`**: searches all labels that contain the word “abbazia”, case-insensitive.
+- **`LIMIT 50`**: restricts the number of results returned to the first 50 matches, for efficiency and readability.
+
+---
+
+### 🔍 SPARQL Query:
+
+```sparql
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX arco: <https://w3id.org/arco/ontology/arco/> 
+PREFIX a-cd: <https://w3id.org/arco/ontology/context-description/> 
+
+SELECT DISTINCT ?cp 
+WHERE {  
+  ?cp a arco:HistoricOrArtisticProperty ;  
+       rdfs:label ?l .  
+  FILTER(REGEX(?l, "abbazia", "i"))  
+}
+LIMIT 50
+
+### ❌ Results
+
+Unfortunately, the query returned mostly repetitive results:
+
+## Out of 50 entities retrieved, 46 were related to the same abbey — Abbazia di Nonantola — and thus the query was not useful for our comparison goal.
+
+This led us to design a more specific query focusing on the vocabulary of properties.
+
+### 🖼️ Screenshot of Results
+
+![Query 5 results](assets/images/query5_results.png)
+
+---
+
+## Query 6 — Investigating used properties for “abbazia”
+
+The aim of this query was to understand **which properties and values** are commonly used to describe entities labeled as **"abbazia"** in the ArCo dataset. This would help us identify **vocabulary** we might use to enrich the description of **Abbazia di Nonantola**.
+
+To explore the RDF structure in detail, we queried the **predicate-object pairs** (property/value) related to abbeys, and we sorted the results using `ORDER BY`.
+
+---
+
+### 🧠 Explanation of keywords used:
+- **`?property ?value`**: returns the predicate-object pairs of each abbey entity.
+- **`ORDER BY DESC(?property)`**: sorts the results alphabetically in descending order by property name.
+- **`FILTER(REGEX(?l, "abbazia", "i"))`**: ensures the results are limited to abbeys.
+
+This allowed us to then **search manually** (using CTRL+F) for terms like *"committent"*, *"style"*, etc., which are **missing** in the current IRI of Abbazia di Nonantola.
+
+---
+
+### 🔍 SPARQL Query:
+
+```sparql
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX arco: <https://w3id.org/arco/ontology/arco/> 
+PREFIX a-cd: <https://w3id.org/arco/ontology/context-description/>
+PREFIX cis: <http://dati.beniculturali.it/cis/> 
+
+SELECT DISTINCT ?property ?value 
+WHERE {  
+  ?cp a arco:HistoricOrArtisticProperty ; 
+      rdfs:label ?l ; 
+      ?property ?value .  
+  FILTER(REGEX(?l, "abbazia", "i"))  
+}  
+ORDER BY DESC(?property)
+```
+
+### 📊 Results
+The query generated a long list of predicate-object pairs related to various abbeys. We used this list as a reference vocabulary, checking for concepts that could enrich our target entity.
+
+Among the missing aspects we looked for were:
+
+Who commissioned the abbey (committent)
+
+Architectural style
+
+Historical function or symbolic meaning
+
+📌 A full discussion of this analysis is available in the section:
+➡️ STEP 2 – Identification of the second missing information in the [Identifying Gaps](gaps.md) page.
