@@ -94,3 +94,51 @@ The query returned the same IRIs found in Query 1, but this time it included dep
 🖼️ Depictions Found
 ![Screenshot 1](assets/images/screenshot1.png)
 ![Screenshot 2](assets/images/screenshot2.png)
+
+---
+
+## Query 3 — Identifying subjects related to the Abbazia
+
+This query was designed to find **unique resources** that are classified as **Subjects** in the **[ArCo ontology](http://wit.istc.cnr.it/arco/)**, and whose labels include the words **"Abbazia"** and **"Nonantola"**.
+
+By doing this, we hoped to uncover more nuanced ways the abbey is referenced in the ArCo dataset.
+
+---
+
+### 🧠 Explanation of keywords used:
+- **`a-cd:Subject`**: specifies that the query is looking for resources of type "Subject" in the ArCo context description ontology.
+- **`rdfs:label`**: retrieves the label or name associated with that subject.
+- **`FILTER(REGEX)`**: narrows down the results to only those that contain both "Abbazia" and "Nonantola".
+
+---
+
+### 🔍 SPARQL Query:
+
+```sparql
+PREFIX a-cd: <https://w3id.org/arco/ontology/context-description/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?subject ?label
+WHERE {
+  ?subject a a-cd:Subject ;
+           rdfs:label ?label .
+
+  FILTER (REGEX(?label, "Abbazia", "i"))
+  FILTER (REGEX(?label, "Nonantola", "i"))
+}
+```
+
+### ✅ Results
+Thanks to this query, we found that the Abbazia di Nonantola is also known as "Abbazia di San Silvestro".
+This alternative name is highly relevant and valuable for enriching its semantic description in the knowledge graph.
+
+### 🖼️ Screenshot of Results
+
+![Query 3 results](assets/images/query3_results.png)
+
+### 🧾 IRIs of Subjects Found
+[Subject 1](https://w3id.org/arco/resource/Subject/39118c7749e95831e607fa945beb9278)
+
+[Subject 2](https://w3id.org/arco/resource/Subject/9a1f6896bfa19393dbe4b1c276a4919d)
+
+[Subject 3](https://w3id.org/arco/resource/Subject/c17e71b0d26dba752b65e19fd7bef43c)
