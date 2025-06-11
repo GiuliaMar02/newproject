@@ -92,6 +92,7 @@ The query returned the same IRIs found in Query 1, but this time it included dep
 ![Query 2 results](assets/images/query2_results.png)
 
 🖼️ Depictions Found
+
 ![Screenshot 1](assets/images/screenshot1.png)
 ![Screenshot 2](assets/images/screenshot2.png)
 
