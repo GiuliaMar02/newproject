@@ -28,16 +28,17 @@ The first step was to verify whether the ArCo Knowledge Graph already contains a
 ### 🔍 SPARQL Query:
 
 ```sparql
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX arco: <https://w3id.org/arco/ontology/arco/>
-PREFIX a-cd: <https://w3id.org/arco/ontology/context-description/>
+ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+ PREFIX arco: <https://w3id.org/arco/ontology/arco/>
+ PREFIX a-cd: <https://w3id.org/arco/ontology/context-description/>
 
-SELECT DISTINCT ?cp
-WHERE {
-  ?cp a arco:HistoricOrArtisticProperty ;
-       rdfs:label ?l .
-  FILTER(REGEX(?l, "Abbazia di Nonantola", "i"))
-}
+ SELECT DISTINCT ?cp
+ WHERE {
+ ?cp a arco:HistoricOrArtisticProperty ;
+ rdfs:label ?l .
+ FILTER(REGEX(?l, "Abbazia di Nonantola", "i"))
+
+ }
 
 ### ✅ Results:
 The query confirmed that ArCo does contain entities related to our topic. These IRIs will be very useful as subjects for the RDF triples we plan to create with new enriched data.
