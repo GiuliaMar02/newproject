@@ -79,3 +79,108 @@ WHERE {
 <https://w3id.org/arco/resource/HistoricOrArtisticProperty/0100210793> a-dd:alternativeDenomination "Abbazia di San Silvestro" .
 
 🟢 **In conclusion**, [ChatGPT](https://chatgpt.com/) correctly used arco-core:hasAlternativeDenomination, a valid predicate within the ArCo ontologies, and inserted the object as a literal. [Gemini](https://gemini.google.com/app), on the other hand, created a new and non-existent prefix a-dd, which is not recognized in the ArCo standard. Therefore, [ChatGPT’s](https://chatgpt.com/) output was more accurate and usable in this context.
+
+## 2. Triple of the second missing information
+
+### Chain-of-thought prompting technique
+
+We asked the LLM the following:
+
+> Could you create an RDF triple using ArCo ontologies for the following sentence:  
+> **“Sant’Anselmo has commissioned the Abbazia di Nonantola”**,  
+> knowing that:  
+> - IRI of Abbazia di Nonantola: `https://w3id.org/arco/resource/HistoricOrArtisticProperty/0100210793`  
+> - Predicate: `a-cd:hasCommittent` (from ArCo ontologies)  
+> - IRI for "Sant’Anselmo di Nonantola" does **not** exist in ArCo, so we need to propose a custom IRI.  
+> Also, please build the corresponding SPARQL CONSTRUCT query.  
+> **Let’s think step by step.**
+
+---
+
+### [ChatGPT](https://chatgpt.com/)
+
+![Screenshot](assets/images/rdf_8.png)  
+
+![Screenshot](assets/images/rdf_9.png)  
+
+![Screenshot](assets/images/rdf_10.png)
+
+**Generated RDF triple:**
+
+```turtle
+<https://w3id.org/arco/resource/HistoricOrArtisticProperty/0100210793>
+    a-cd:hasCommittent <https://w3id.org/arco/resource/Agent/sant-anselmo-nonantola> .
+```
+
+![Screenshot](assets/images/rdf_11.png)
+
+### SPARQL CONSTRUCT query:
+
+```sparql
+PREFIX a-cd: <https://w3id.org/arco/ontology/context-description/>
+PREFIX ex: <http://example.org/>
+
+CONSTRUCT {
+  <https://w3id.org/arco/resource/HistoricOrArtisticProperty/0100210793> 
+      a-cd:hasCommittent ex:SantAnselmoDiNonantola .
+}
+WHERE {
+  # We are asserting a new triple, so the WHERE clause can be empty or used to check for existence
+}
+```
+
+![Screenshot](assets/images/rdf_12.png)
+
+### SPARQL RESULT USING CHAT GPT LAST CONSTRUCT QUERY:
+
+![Screenshot](assets/images/rdf_13.png)
+
+### [Gemini](https://gemini.google.com/app)
+
+![Screenshot](assets/images/rdf_14.png)
+
+![Screenshot](assets/images/rdf_15.png)
+
+### COPY OF THE RDF TRIPLE:
+```turtle
+<https://w3id.org/arco/resource/HistoricOrArtisticProperty/0100210793> a-cd:hasCommittent "Sant'Anselmo di Nonantola" .
+![image](https://github.com/user-attachments/assets/2f92ad7c-8ee4-476e-a3b7-0ec1c938bb39)
+```
+
+![Screenshot](assets/images/rdf_16.png)
+
+![Screenshot](assets/images/rdf_17.png)
+
+### Copy of the query:
+
+```sparql
+PREFIX a-cd: <https://w3id.org/arco/ontology/context-description/>
+PREFIX arco: <https://w3id.org/arco/ontology/arco/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+ 
+CONSTRUCT {
+  # This is the triple that the query will generate.
+  <https://w3id.org/arco/resource/HistoricOrArtisticProperty/0100210793> a-cd:hasCommittent "Sant'Anselmo di Nonantola" .
+}
+WHERE {
+  # This WHERE clause acts as a condition.
+  # It ensures that the subject (Abbazia di Nonantola) exists
+  # and is identified as a HistoricOrArtisticProperty in the dataset.
+  # If this pattern is found, the CONSTRUCT triple will be created.
+  <https://w3id.org/arco/resource/HistoricOrArtisticProperty/0100210793> rdf:type arco:HistoricOrArtisticProperty .
+}
+```
+
+### SPARQL RESULT USING GEMINI CONSTRUCT QUERY:
+
+![Screenshot](assets/images/rdf_18.png)
+
+### ANALYSIS:
+-	[ChatGPT](https://chatgpt.com/) gave us a longer and more detailed answer 
+-	[Gemini](https://gemini.google.com/app) was more concise and straight to the point, without proposing additional “optional steps”, as [ChatGPT](https://chatgpt.com/) did, for instance, by defining “Sant’Anselmo” as agent.
+
+---
+
+
+
+
