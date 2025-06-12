@@ -329,3 +329,87 @@ WHERE {
 
 ![Screenshot](assets/images/rdf_33.png)
 
+## 4. Triple of the fourth missing information 
+
+We started from the fact that there is only one abbey in Nonantola (see “Fourth missing information” in Step 3 above), therefore the cultural property beginning with “Leoni stilofori” (IRI Portale )  should make clear reference to the Abbey of Nonantola, not only “abbazia” in general.
+
+### PROMPT:
+
+> Hey, could you help me in building a triple? The context is Nonantola Abbey, I want to create a connection (through a triple) between "leoni stilofori"
+> belonging to the Abbey, because it is not specified in Arco.
+> Here the IRI: subject: https://w3id.org/arco/resource/HistoricOrArtisticProperty/0800221017-0 + predicate =arco:isCulturalPropertyComponentOf + object =
+> https://w3id.org/arco/resource/PhotographicHeritage/0800634107
+
+[ChatGPT](https://chatgpt.com/)
+
+![Screenshot](assets/images/rdf_34.png)
+
+![Screenshot](assets/images/rdf_35.png)
+
+## RESULT OBTAINED RUNNING THE QUERY IN SPARQL: 
+
+![Screenshot](assets/images/rdf_36.png)
+
+[Gemini](https://gemini.google.com/app)
+
+![Screenshot](assets/images/rdf_37.png)
+
+![Screenshot](assets/images/rdf_38.png)
+
+N.B: in this case, we haven’t provided any examples before making our request because we already had all the IRIs.
+
+### 📊 ANALYSIS OF THE RESULTS OF THE CONSTRUCTION OF THE QUERIES: 
+
+•	Both [ChatGPT](https://chatgpt.com/) and [Gemini](https://gemini.google.com/app) always gave correct answers, even if they differ in format and clarity; [ChatGPT](https://chatgpt.com/) tends to give longer and step-by-step answers
+•	In some cases they used different prefixes but always justifying their choice: for example, the prefix used by [ChatGPT](https://chatgpt.com/) for the predicate of the first triple was arco-core (together with :hasAlternativeDenomination), while [Gemini's](https://gemini.google.com/app) one was a-dd.
+•	[ChatGPT](https://chatgpt.com/) gave us more detailed answers, often adding more information than requested in the prompt; for example, in the first prompt, it also made us a SPARQL CONSTRUCT query that was not necessary and provided the resulting triple in **standard Turtle syntax** (short for **Terse RDF Triple Language**, a syntax used to write **RDF data in a human-readable and compact format**), along with a **clear natural language explanation**. It is a longer RDF representation, compared to the one provided by [Gemini](https://gemini.google.com/app).
+•	On the other hand, [Gemini](https://gemini.google.com/app) always answered precisely to what we had requested, without adding anything else. It was more concise and did not ask to propose examples. For example, in the second triple, it was more concise and straight to the point, without proposing additional, as [ChatGPT](https://chatgpt.com/) did, for instance in “Optionals: add labels or types” (second new triple), by defining “Sant’Anselmo” as Agent.
+
+
+### 🔗TRIPLES SUMMARY
+
+*Triple 1 - `a-cd:hasAlternativeDenomination`* 
+
+> Subject: [https://w3id.org/arco/resource/HistoricOrArtisticProperty/0100210793](https://dati.beniculturali.it/lodview-arco/resource/HistoricOrArtisticProperty/0100210793.html)
+> 
+> Predicate: `hasAlternativeDenomination`
+> 
+> Object: Abbazia di San Silvestro (IRI - needs to be created, not present in ArCo)
+
+*Triple 2 - `a-cd:hasCommittent`*
+
+> Subject: [https://w3id.org/arco/resource/HistoricOrArtisticProperty/0100210793](https://dati.beniculturali.it/lodview-arco/resource/HistoricOrArtisticProperty/0100210793.html)
+> 
+> Predicate: `a-cd:hasCommittent`
+> 
+> Object: Sant’Anselmo di Nonantola (IRI - needs to be created, not present in ArCo)
+
+*Triple set 3*
+*Triple 3.1 - `a-dd:hasAffixedElement`*
+
+> Subject: [https://w3id.org/arco/resource/HistoricOrArtisticProperty/0100210793](https://dati.beniculturali.it/lodview-arco/resource/HistoricOrArtisticProperty/0100210793.html)
+> 
+> Predicate: `a-dd:hasAffixedElement`
+> 
+> Object: “Hic locus Domini est, firmiter fundatus est” (this type of class - a-dd:Inscriptions - are represented as “literals”)
+
+*Triple 3.2 - `a-dd:hasAffixedElement`*
+
+> Subject: [https://w3id.org/arco/resource/HistoricOrArtisticProperty/0100210793](https://dati.beniculturali.it/lodview-arco/resource/HistoricOrArtisticProperty/0100210793.html)
+> 
+> Predicate: `a-dd:hasAffixedElement`
+> 
+> Object: “Altæ fornices templi conlapsæ sunt anno millesimo centesimo septimo decimo a nativitate Redemptoris, et quattuor annis postea restaurari cœptæ sunt” ((this type of class - a-dd:Inscriptions - are represented as “literals”)
+
+*Triple 4*
+
+> Subject: [https://w3id.org/arco/resource/HistoricOrArtisticProperty/0800221017-0](https://dati.beniculturali.it/lodview-arco/resource/HistoricOrArtisticProperty/0800221017-0.html)
+> 
+> Predicate: `arco:isCulturalPropertyComponentOf`
+> 
+> Object: [https://w3id.org/arco/resource/PhotographicHeritage/0800634107](https://dati.beniculturali.it/lodview-arco/resource/PhotographicHeritage/0800634107.html)
+
+
+
+
+
