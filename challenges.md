@@ -16,7 +16,7 @@ title: Abbazia di Nonantola
 
 ---
 
-![Challenges](assets/images/challenges_solutions.png)
+<img src="assets/images/challenges_solutions.png" alt="Challenges" width="400">
 
 # Challenges Faced During the Project
 
