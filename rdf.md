@@ -179,8 +179,87 @@ WHERE {
 -	[ChatGPT](https://chatgpt.com/) gave us a longer and more detailed answer 
 -	[Gemini](https://gemini.google.com/app) was more concise and straight to the point, without proposing additional “optional steps”, as [ChatGPT](https://chatgpt.com/) did, for instance, by defining “Sant’Anselmo” as agent.
 
+## 3. Triple of the third missing information
+
+We decided to create two triples with two examples of inscriptions that can be found engraved in the Abbazia di Nonantola, one suggested by Chat GPT and the other by Gemini. For these triples we used as subject for the Abbazia di Nonantola another IRI depicting the abbey from the front, as the incriptions are affixed on the main portal.
+
+### 3.1 CONSTRUCTION OF THE TRIPLE FOR THE INSCRIPTION: “Hic locus Domini est, firmiter fundatus est”
+
+### Prompt:
+
+*Example triple 1:*
+
+> Subject: veduta della piazza e della basilica di San Pietro in Vaticano (stampa, elemento d'insieme) di Falda Giovan Battista (sec. XVII)
+> https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900476442
+> Predicate: a-dd:hasAffixedElement
+> Object: Iscrizione 3 sul bene culturale 0900476442 https://w3id.org/arco/resource/Inscription/0900476442-inscription-3
+
+*Example triple 2:*
+
+> Subject: https://w3id.org/arco/resource/Inscription/0900476442-inscription-3
+> Predicate: a-dd:positionOnCulturalProperty
+> Object: in basso nel centro
+
+*Example triple 3:*
+
+> Subject: https://w3id.org/arco/resource/Inscription/0900476442-inscription-3
+> Predicate: a-dd:transcript
+> Object: Per Gio(vanni) Giacomo Rossi in Roma alla Pace con P(rivilegio) del S(ommo) P(ontefice)
+
+*Example triple 4:*
+
+> Subject: https://w3id.org/arco/resource/Inscription/0900476442-inscription-3
+> Predicate: rdf:type
+> Object: a-dd:Inscription                                                                                               
+
+> Please, could you transform the following information into RDF format and use Arco ontology taking the previous triples as examples?
+> “The Abbazia di Nonantola has affixed the element ‘Iscrizione 1 sul bene culturale 0800634107’, that this element has a transcription which is ”Hic locus > Domini est, firmiter fundatus est” and it is engraved on the portal archivolt.”
+> Note that:
+> -	 the IRI of the subject (Abbazia di Nonantola) is https://w3id.org/arco/resource/PhotographicHeritage/0800634107
+> -	The IRI of the “Iscrizione sul bene culturale 0800634107” does not exist in Arco
+
 ---
 
+[ChatGPT](https://chatgpt.com/)
 
+![Screenshot](assets/images/rdf_19.png)
 
+![Screenshot](assets/images/rdf_20.png)
 
+### COPY OF THE TRIPLE:
+
+```sparql
+@prefix a-dd: <https://w3id.org/arco/ontology/denotative-description/> .
+@prefix arco-inscription: <https://w3id.org/arco/resource/Inscription/> .
+@prefix arco-ph: <https://w3id.org/arco/resource/PhotographicHeritage/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+ 
+arco-ph:0800634107 a-dd:hasAffixedElement arco-inscription:0800634107-inscription-1 .
+ 
+arco-inscription:0800634107-inscription-1 rdf:type a-dd:Inscription ;
+    a-dd:transcript "Hic locus Domini est, firmiter fundatus est" ;
+    a-dd:positionOnCulturalProperty "sull'archivolto del portale"@it .
+```
+
+[Gemini](https://gemini.google.com/app)
+
+![Screenshot](assets/images/rdf_21.png)
+
+![Screenshot](assets/images/rdf_22.png)
+
+![Screenshot](assets/images/rdf_23.png)
+
+![Screenshot](assets/images/rdf_24.png)
+
+![Screenshot](assets/images/rdf_25.png)
+
+### COPY OF THE CODES:
+
+```sparql
+<https://w3id.org/arco/resource/PhotographicHeritage/0800634107> a-dd:hasAffixedElement <https://w3id.org/arco/resource/Inscription/0800634107-inscription-1> .
+<https://w3id.org/arco/resource/Inscription/0800634107-inscription-1> a-dd:transcript "Hic locus Domini est, firmiter fundatus est" .
+<https://w3id.org/arco/resource/Inscription/0800634107-inscription-1> a-dd:positionOnCulturalProperty "on the portal archivolt" .
+<https://w3id.org/arco/resource/Inscription/0800634107-inscription-1> rdf:type a-dd:Inscription .
+```
+
+### 3.2 CONSTRUCTION OF THE TRIPLE FOR THE INSCRIPTION: “Altæ fornices templi conlapsæ sunt anno millesimo centesimo septimo decimo a nativitate Redemptoris, et quattuor annis postea restaurari cœptæ sunt. 
