@@ -18,7 +18,7 @@ title: Abbazia di Nonantola
 
 We used two LLMs: [ChatGPT](https://chat.openai.com/) and [Gemini](https://gemini.google.com/)
 
-![LLM](assets/images/llms_png)
+![LLM](assets/images/llms.png)
 
 ## 1️⃣ First Missing Information: the alternative name of the Abbazia di Nonantola
 
