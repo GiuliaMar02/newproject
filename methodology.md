@@ -14,6 +14,8 @@ title: Abbazia di Nonantola
   <a href="conclusion.html">✅ Conclusion</a>
 </div>
 
+![Methodology](assets/images/methodology.png)
+
 # Methodology
 
 Our project followed a structured and multi-step methodology to explore and enrich the knowledge about [**Abbazia di Nonantola**](https://dati.beniculturali.it/lodview-arco/resource/HistoricOrArtisticProperty/0100210793.html) using the [**ArCo**](http://wit.istc.cnr.it/arco/) Knowledge Graph and Large Language Models.
