@@ -18,6 +18,8 @@ title: Abbazia di Nonantola
 
 # Challenges Faced During the Project
 
+![Challenges](assets/images/challenges_solutions.png)
+
 In the development of our KE4H project on the **[Abbazia di Nonantola](https://w3id.org/arco/resource/HistoricOrArtisticProperty/0100210793)**, we encountered several challenges related to semantic technologies, data extraction, and prompt engineering. Below we describe each problem and how we addressed it.
 
 ---
