@@ -190,29 +190,38 @@ We decided to create two triples with two examples of inscriptions that can be f
 *Example triple 1:*
 
 > Subject: veduta della piazza e della basilica di San Pietro in Vaticano (stampa, elemento d'insieme) di Falda Giovan Battista (sec. XVII)
-> https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900476442
-> Predicate: a-dd:hasAffixedElement
-> Object: Iscrizione 3 sul bene culturale 0900476442 https://w3id.org/arco/resource/Inscription/0900476442-inscription-3
+> `https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900476442`
+> 
+> Predicate: `a-dd:hasAffixedElement`
+> 
+> Object: Iscrizione 3 sul bene culturale 0900476442 `https://w3id.org/arco/resource/Inscription/0900476442-inscription-3`
 
 *Example triple 2:*
 
-> Subject: https://w3id.org/arco/resource/Inscription/0900476442-inscription-3
-> Predicate: a-dd:positionOnCulturalProperty
+> Subject: `https://w3id.org/arco/resource/Inscription/0900476442-inscription-3`
+> 
+> Predicate: `a-dd:positionOnCulturalProperty`
+> 
 > Object: in basso nel centro
 
 *Example triple 3:*
 
-> Subject: https://w3id.org/arco/resource/Inscription/0900476442-inscription-3
-> Predicate: a-dd:transcript
+> Subject: `https://w3id.org/arco/resource/Inscription/0900476442-inscription-3`
+> 
+> Predicate: `a-dd:transcript`
+> 
 > Object: Per Gio(vanni) Giacomo Rossi in Roma alla Pace con P(rivilegio) del S(ommo) P(ontefice)
 
 *Example triple 4:*
 
-> Subject: https://w3id.org/arco/resource/Inscription/0900476442-inscription-3
-> Predicate: rdf:type
+> Subject: `https://w3id.org/arco/resource/Inscription/0900476442-inscription-3`
+> 
+> Predicate: `rdf:type`
+> 
 > Object: a-dd:Inscription                                                                                               
 
 > Please, could you transform the following information into RDF format and use Arco ontology taking the previous triples as examples?
+> 
 > “The Abbazia di Nonantola has affixed the element ‘Iscrizione 1 sul bene culturale 0800634107’, that this element has a transcription which is ”Hic locus > Domini est, firmiter fundatus est” and it is engraved on the portal archivolt.”
 > Note that:
 > -	 the IRI of the subject (Abbazia di Nonantola) is https://w3id.org/arco/resource/PhotographicHeritage/0800634107
@@ -263,3 +272,60 @@ arco-inscription:0800634107-inscription-1 rdf:type a-dd:Inscription ;
 ```
 
 ### 3.2 CONSTRUCTION OF THE TRIPLE FOR THE INSCRIPTION: “Altæ fornices templi conlapsæ sunt anno millesimo centesimo septimo decimo a nativitate Redemptoris, et quattuor annis postea restaurari cœptæ sunt. 
+
+For the construction of the triple about the second inscription we wanted to use the other methodology, SPARQL CONSTRUCT query, always with the LLMs’ help. 
+
+### Prompt
+
+> Could you transform also the following information into a SPARQL CONSTRUCT query using Arco ontology? Our objective is to create new triples with the following > information:
+
+> “The Abbazia di Nonantola has affixed the element ‘Iscrizione 2 sul bene culturale 0800634107’, that this element has a transcription which is ” Altæ fornices > templi conlapsæ sunt anno millesimo centesimo septimo decimo a nativitate Redemptoris, et quattuor annis postea restaurari cœptæ sunt.” and it is engraved on
+> the portal architrave.”
+
+> Note that:  
+> -	the IRI of the subject (Abbazia di Nonantola) is https://w3id.org/arco/resource/PhotographicHeritage/0800634107  
+> -	The IRI of the “Iscrizione 2 sul bene culturale 0800634107” does not exist in Arco
+
+[ChatGPT](https://chatgpt.com/)
+
+![Screenshot](assets/images/rdf_26.png)
+
+![Screenshot](assets/images/rdf_27.png)
+
+![Screenshot](assets/images/rdf_28.png)
+
+### COPY OF THE SPARQL CONSTRUCT QUERY:
+
+```sparql
+PREFIX a-dd: <https://w3id.org/arco/ontology/denotative-description/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+CONSTRUCT {
+  <https://w3id.org/arco/resource/PhotographicHeritage/0800634107> 
+    a-dd:hasAffixedElement <https://w3id.org/arco/resource/Inscription/0800634107-inscription-2> .
+ 
+  <https://w3id.org/arco/resource/Inscription/0800634107-inscription-2> 
+    rdf:type a-dd:Inscription ;
+    a-dd:transcript "Altæ fornices templi conlapsæ sunt anno millesimo centesimo septimo decimo a nativitate Redemptoris, et quattuor annis postea restaurari cœptæ sunt." ;
+    a-dd:positionOnCulturalProperty "sull'architrave del portale"@it .
+}
+WHERE {
+  # No WHERE clause needed — we are asserting new data
+}
+```
+
+### RESULT OBTAINED RUNNING CHAT GPT’S SPARQL CONSTRUCT QUERY:
+
+![Screenshot](assets/images/rdf_29.png)
+
+[Gemini](https://gemini.google.com/app)
+
+![Screenshot](assets/images/rdf_30.png)
+
+![Screenshot](assets/images/rdf_31.png)
+
+![Screenshot](assets/images/rdf_32.png)
+
+### RESULT OBTAINED EXECUTING THE QUERY ON SPARQL:
+
+![Screenshot](assets/images/rdf_33.png)
+
