@@ -14,7 +14,7 @@ title: Abbazia di Nonantola
   <a href="conclusion.html">✅ Conclusion</a>
 </div>
 
-![Methodology](assets/images/methodology.png)
+<img src="assets/images/methodology.png" alt="Methodology" width="300">
 
 # Methodology
 
