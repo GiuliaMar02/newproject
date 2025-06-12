@@ -16,7 +16,7 @@ title: Abbazia di Nonantola
 
 # SPARQL Queries & Results
 
-![ArCo](assets/images/arco.png)
+<img src="assets/images/arco.png" alt="Arco" width="400">
 
 ## Query 1 — Does ArCo contain our topic?
 
