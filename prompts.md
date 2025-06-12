@@ -18,7 +18,7 @@ title: Abbazia di Nonantola
 
 We used two LLMs: [ChatGPT](https://chat.openai.com/) and [Gemini](https://gemini.google.com/)
 
-## First Missing Information: the alternative name of the Abbazia di Nonantola
+## 1️⃣ First Missing Information: the alternative name of the Abbazia di Nonantola
 
 ### Zero-shot Prompting Technique
 
@@ -56,7 +56,7 @@ The official site of the Abbey confirms this information:
 
 ---
 
-## Second Missing Information: Commission
+## 2️⃣ Second Missing Information: Commission
 
 ### Chain-of-Thought (Zero-shot) Technique
 
@@ -191,7 +191,7 @@ The official site of the abbey confirms the historical foundation:
 
 ---
 
-## Third Missing Information: Are there any inscriptions at the Abbazia di Nonantola?
+## 3️⃣ Third Missing Information: Are there any inscriptions at the Abbazia di Nonantola?
 
 To find whether the **Abbazia di Nonantola** contains any **inscriptions**, we applied a **few-shot prompting technique** with both [ChatGPT](https://chat.openai.com/) and [Gemini](https://gemini.google.com/).
 
@@ -313,7 +313,7 @@ So now we have another example to use for our triples in the next step.
 
 ---
 
-### Fourth Missing Information: Is there another abbey in Nonantola?
+### 4️⃣ Fourth Missing Information: Is there another abbey in Nonantola?
 
 **4. ZERO-SHOT PROMPTING TECHNIQUE**  
 In this case, we used a simple and direct question without any examples or instructions — a classic zero-shot prompt. The reason is that we are asking a **binary factual question**: does another abbey exist in Nonantola apart from the well-known one?
