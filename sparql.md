@@ -16,6 +16,8 @@ title: Abbazia di Nonantola
 
 # SPARQL Queries & Results
 
+![ArCo](assets/images/arco.png)
+
 ## Query 1 — Does ArCo contain our topic?
 
 The first step was to verify whether the ArCo Knowledge Graph already contains an entity representing our selected topic, **[Abbazia di Nonantola](https://dati.beniculturali.it/lodview-arco/resource/HistoricOrArtisticProperty/0100210793.html)**.
