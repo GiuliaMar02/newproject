@@ -16,7 +16,7 @@ title: Abbazia di Nonantola
 
 ---
 
-# 🏁Conclusions
+# 🏁Conclusion
 
 Our project on the **[Abbazia di Nonantola](https://w3id.org/arco/resource/HistoricOrArtisticProperty/0100210793)** allowed us to explore the potential and limitations of semantic web technologies and large language models in the context of Italian cultural heritage. Here are the main takeaways:
 
