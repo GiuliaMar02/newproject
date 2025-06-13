@@ -182,8 +182,7 @@ By clicking on one of the affixed element IRIs — specifically, [Iscrizione 1](
 
 ### Conclusion
 
-This analysis revealed that Abbazia di Nonantola does not yet include affixed elements such as inscriptions.
-The property arco:hasAffixedElement could be used to describe any inscriptions present on the abbey, thus enhancing its semantic representation in ArCo.
+These properties will be useful to describe the possible inscriptions on the Abbazia di Nonantola.
 
 ### Verification for Abbazia di Nonantola
 
