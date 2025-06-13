@@ -78,7 +78,6 @@ WHERE {
 
 <https://w3id.org/arco/resource/HistoricOrArtisticProperty/0100210793> a-dd:alternativeDenomination "Abbazia di San Silvestro" .
 
-🟢 **In conclusion**, [ChatGPT](https://chatgpt.com/) correctly used arco-core:hasAlternativeDenomination, a valid predicate within the ArCo ontologies, and inserted the object as a literal. [Gemini](https://gemini.google.com/app), on the other hand, created a new and non-existent prefix a-dd, which is not recognized in the ArCo standard. Therefore, [ChatGPT’s](https://chatgpt.com/) output was more accurate and usable in this context.
 
 ## 2. Triple of the second missing information
 
@@ -175,9 +174,6 @@ WHERE {
 
 ![Screenshot](assets/images/rdf_18.png)
 
-### ANALYSIS:
--	[ChatGPT](https://chatgpt.com/) gave us a longer and more detailed answer 
--	[Gemini](https://gemini.google.com/app) was more concise and straight to the point, without proposing additional “optional steps”, as [ChatGPT](https://chatgpt.com/) did, for instance, by defining “Sant’Anselmo” as agent.
 
 ## 3. Triple of the third missing information
 
@@ -388,6 +384,7 @@ N.B: in this case, we haven’t provided any examples before making our request 
 > Object: Sant’Anselmo di Nonantola (IRI - needs to be created, not present in ArCo)
 
 *Triple set 3*
+
 *Triple 3.1 - `a-dd:hasAffixedElement`*
 
 > Subject: [https://w3id.org/arco/resource/HistoricOrArtisticProperty/0100210793](https://dati.beniculturali.it/lodview-arco/resource/HistoricOrArtisticProperty/0100210793.html)
@@ -404,7 +401,7 @@ N.B: in this case, we haven’t provided any examples before making our request 
 > 
 > Object: “Altæ fornices templi conlapsæ sunt anno millesimo centesimo septimo decimo a nativitate Redemptoris, et quattuor annis postea restaurari cœptæ sunt” ((this type of class - a-dd:Inscriptions - are represented as “literals”)
 
-*Triple 4*
+*Triple 4* - `arco:isCulturalPropertyComponentOf`
 
 > Subject: [https://w3id.org/arco/resource/HistoricOrArtisticProperty/0800221017-0](https://dati.beniculturali.it/lodview-arco/resource/HistoricOrArtisticProperty/0800221017-0.html)
 > 
