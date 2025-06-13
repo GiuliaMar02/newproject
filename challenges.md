@@ -33,39 +33,39 @@ We examined existing SPARQL patterns and learned how to use key expressions such
 
 ---
 
-### 📚 Managing Large and Repetitive Data
+### 📚 Exploring Ontology and Trying to Find Missing Information
 
-The results of our SPARQL queries often produced vast amounts of information, many of which were redundant or irrelevant to our topic. This made it difficult to identify missing or valuable data.
+The results of our queries gave us few information about our abbey, something that made the research of the gaps more difficult.
 
 **✅ Solution:**  
-We refined our keyword usage and filtering strategies. Despite initial difficulties, we successfully identified meaningful gaps in the dataset.
+We tried to build more generic queries to find bigger amounts of information (e.g.: the query where we lo oked for cultural properties in Nonantola).
 
 ---
 
 ### 🔍 Identifying Proper Predicates for RDF Triples
 
-Selecting suitable predicates was particularly challenging, especially when several similar options existed within the ontology or when the required property was hard to locate.
+Predicates and properties may seem very similar to one another, and many others were difficult to find. .
 
 **✅ Solution:**  
-We created more focused SPARQL queries to discover specific predicates and cross-referenced them with [ArCo](http://wit.istc.cnr.it/arco/?lang=en) documentation and examples.
+We created more we designed more specific queries to search for properties related to abbeys in general.
 
 ---
 
 ### 💬 Engineering Effective LLM Prompts
 
-Our initial prompts to the LLMs ([ChatGPT](https://chatgpt.com/) and [Gemini](https://deepmind.google/technologies/gemini/)) often resulted in vague or irrelevant responses.
+Especially in step 3, often LLMs were deficient in giving the answers we wanted.
 
 **✅ Solution:**  
 We refined our prompt strategies according to the **three required techniques** (`zero-shot`, `few-shot`, `chain-of-thought`), aligning them with the type of missing information we wanted to retrieve.
 
 ---
 
-### 🏛️ Selecting an Appropriate IRI
+### 🏛️ Selecting an Appropriate IRI that could represent the topic
 
 To enrich the cultural data, we needed to choose the most suitable IRI to represent the **[Abbazia di Nonantola](https://w3id.org/arco/resource/HistoricOrArtisticProperty/0100210793)**. However, only two relevant IRIs were found through Query 2.
 
 **✅ Solution:**  
-We selected the IRI linked to the **photograph of the abbey’s apsidal part**, as it provided the most complete and visually representative depiction.
+We chose as IRI of the Abbazia di Nonantola two IRIs. For the first two triples we used the IRI of the photo of the absidal part but we didn’t chose the same IRI for the other triples (3 and 4) because we were looking at the front part of the abbey.
 
 ---
 
