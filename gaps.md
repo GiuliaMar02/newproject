@@ -215,7 +215,7 @@ In the following phases of the project, we will consult LLMs to verify the histo
 ### 4. Identification of the Fourth Gap
 
 We launched a general query to retrieve all cultural properties connected to **Nonantola**, in order to find whether there are components or properties **indirectly related** to the Abbey of Nonantola.  
-Our aim was to identify properties that could be directly connected to the Abbey through the predicate `arco:isCulturalPropertyComponentOf`.
+Our aim was to identify properties that could be directly connected to the Abbey.
 
 **QUERY 12**  
 ```sparql
