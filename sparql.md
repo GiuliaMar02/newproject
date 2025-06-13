@@ -224,7 +224,7 @@ LIMIT 50
 
 Unfortunately, the query returned mostly repetitive results:
 
-## Out of 50 entities retrieved, 46 were related to the same abbey — Abbazia di Nonantola — and thus the query was not useful for our comparison goal.
+Out of 50 entities retrieved, 46 were related to the same abbey — Abbazia di Forlí — and thus the query was not useful for our comparison goal.
 
 This led us to design a more specific query focusing on the vocabulary of properties.
 
