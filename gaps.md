@@ -118,7 +118,6 @@ We asked **ChatGPT** to clarify this distinction.
 
 The answer revealed that `a-cd:hasCommittent` is the **more appropriate predicate** for our case, as it specifically refers to the **entity or person who commissioned** the cultural property.
 
-Thus, we conclude that this predicate is **missing** from the IRI of the **Abbazia di Nonantola** and should be added to **enrich its description**.
 
 ### Confirmation with ASK Query
 
