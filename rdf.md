@@ -181,7 +181,7 @@ We decided to create two triples with two examples of inscriptions that can be f
 
 ### 3.1 CONSTRUCTION OF THE TRIPLE FOR THE INSCRIPTION: “Hic locus Domini est, firmiter fundatus est”
 
-### Prompt:
+### Few-shot prompting technique:
 
 *Example triple 1:*
 
@@ -271,7 +271,7 @@ arco-inscription:0800634107-inscription-1 rdf:type a-dd:Inscription ;
 
 For the construction of the triple about the second inscription we wanted to use the other methodology, SPARQL CONSTRUCT query, always with the LLMs’ help. 
 
-### Prompt
+### Zero-shot prompting technique
 
 > Could you transform also the following information into a SPARQL CONSTRUCT query using Arco ontology? Our objective is to create new triples with the following > information:
 
@@ -373,7 +373,7 @@ N.B: in this case, we haven’t provided any examples before making our request 
 > 
 > Predicate: `hasAlternativeDenomination`
 > 
-> Object: Abbazia di San Silvestro (IRI - needs to be created, not present in ArCo)
+> Object: Abbazia di San Silvestro (literal)
 
 *Triple 2 - `a-cd:hasCommittent`*
 
