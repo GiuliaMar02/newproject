@@ -33,11 +33,11 @@ SPARQL and the [ArCo](http://wit.istc.cnr.it/arco/?lang=en) ontology proved to b
 ### 🤖 Large Language Models
 
 Our work with LLMs, particularly **[ChatGPT](https://chatgpt.com/)** and **[Gemini](https://gemini.google.com/app)**, revealed the strengths and weaknesses of both systems:
-- **Prompting techniques** that use examples, structured input, and clear task definitions (especially **few-shot** and **chain-of-thought**) lead to better and more accurate outputs.
-- **[ChatGPT](https://chatgpt.com/)** often appeared more fluent and logically structured, especially in **chain-of-thought** tasks.
-- However, **[Gemini](https://gemini.google.com/app)** sometimes outperformed [ChatGPT](https://chatgpt.com/) in **few-shot** scenarios, offering more complete or contextually accurate results.
+- Theytend to perform better through **prompting techniques** that use examples, structured input, and clear task definitions (especially **few-shot** and **chain-of-thought**).
+-However, when looking for vey specific information, the LLMs do not always provide the correct answer. **[ChatGPT](https://chatgpt.com/)** often appeared more fluent and logically structured, especially in **chain-of-thought** tasks.
+- Moreover, though **[ChatGPT](https://chatgpt.com/)** may appear more efficient and “intelligent” when answering questions, especially with the chain-of-thought technique,  **[Gemini](https://gemini.google.com/app)** performs better than [ChatGPT](https://chatgpt.com/) when guided by well-structured prompting techniques, such as the few-shot technique. 
 
-This finding contradicted our initial expectations and showed the importance of **model-specific prompting** strategies.
+This finding contradicted our initial expectations and showed the importance of **model-specific prompting** strategies in both of the LLMs.
 
 ---
 
@@ -46,7 +46,8 @@ This finding contradicted our initial expectations and showed the importance of 
 This project opens the door to several possibilities for future enrichment:
 - **New RDF triples** (especially regarding the abbey’s inscriptions) could be integrated into ArCo to enhance its current representation of **[Abbazia di Nonantola](https://w3id.org/arco/resource/HistoricOrArtisticProperty/0100210793)**.
 - A more **complete and unified IRI** for the abbey as a **"Historic Cultural Property"** could be introduced to improve data linkage.
-- Further research could involve **cross-linking [ArCo](http://wit.istc.cnr.it/arco/?lang=en) with other ontologies** or **incorporating 3D depictions and architectural elements** to provide a richer and more immersive digital heritage experience.
+- Furthermore, the ontology could be further enriched with more accurate depictions of the abbey, directly connected to an **IRI about Abbazia di Nonantola as “Architectural or Landscape heritage”** or as an **“Immovable cultural property”**.
+
 
 ---
 
