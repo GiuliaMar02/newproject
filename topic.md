@@ -33,6 +33,7 @@ We selected Abbazia di Nonantola for this project because:
 - It is widely known and cherished in the region of **Emilia-Romagna**  
 - Its **historical and religious relevance** makes it easy to draw parallels with other heritage sites  
 - While existing descriptions are historically accurate, there is room to **enhance its semantic representation** with additional details and contextual links
+- And finally, the abbey is situated in the hometown of one of our team members!
 
 ---
 
