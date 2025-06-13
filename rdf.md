@@ -361,8 +361,11 @@ N.B: in this case, we haven’t provided any examples before making our request 
 ### 📊 ANALYSIS OF THE RESULTS OF THE CONSTRUCTION OF THE QUERIES: 
 
 •	Both [ChatGPT](https://chatgpt.com/) and [Gemini](https://gemini.google.com/app) always gave correct answers, even if they differ in format and clarity; [ChatGPT](https://chatgpt.com/) tends to give longer and step-by-step answers
+
 •	In some cases they used different prefixes but always justifying their choice: for example, the prefix used by [ChatGPT](https://chatgpt.com/) for the predicate of the first triple was arco-core (together with :hasAlternativeDenomination), while [Gemini's](https://gemini.google.com/app) one was a-dd.
+
 •	[ChatGPT](https://chatgpt.com/) gave us more detailed answers, often adding more information than requested in the prompt; for example, in the first prompt, it also made us a SPARQL CONSTRUCT query that was not necessary and provided the resulting triple in **standard Turtle syntax** (short for **Terse RDF Triple Language**, a syntax used to write **RDF data in a human-readable and compact format**), along with a **clear natural language explanation**. It is a longer RDF representation, compared to the one provided by [Gemini](https://gemini.google.com/app).
+
 •	On the other hand, [Gemini](https://gemini.google.com/app) always answered precisely to what we had requested, without adding anything else. It was more concise and did not ask to propose examples. For example, in the second triple, it was more concise and straight to the point, without proposing additional, as [ChatGPT](https://chatgpt.com/) did, for instance in “Optionals: add labels or types” (second new triple), by defining “Sant’Anselmo” as Agent.
 
 
