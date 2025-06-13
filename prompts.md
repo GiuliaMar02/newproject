@@ -309,7 +309,8 @@ translated as: “This place is awesome and full of reverence.”
 ![Screenshot](assets/images/prompt_13.png)
 
 So now we have another example to use for our triples in the next step.
-•	Here we can see some other inscriptions of the abbey: [https://www.marcostucchi.com/Articoli/AbbaziaNonantola/index_en.html](https://www.marcostucchi.com/Articoli/AbbaziaNonantola/index_en.html) 
+
+Here we can see some other inscriptions of the abbey: [https://www.marcostucchi.com/Articoli/AbbaziaNonantola/index_en.html](https://www.marcostucchi.com/Articoli/AbbaziaNonantola/index_en.html) 
 
 ---
 
