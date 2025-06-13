@@ -45,6 +45,7 @@ In our case, this method was sufficient to extract the missing alternative name,
 
 ![Screenshot](assets/images/prompt_2.png)
 
+### Considerations ###
 - Gemini gave a more **concise and direct** response, but still provided the **correct alternative name**.
 - It confirmed the **dedication to Pope San Silvestro**, added info about **relics**, and provided the **English** name of the abbey.
 - Unlike ChatGPT, Gemini also included a **photo** of the abbey.
