@@ -38,6 +38,7 @@ In our case, this method was sufficient to extract the missing alternative name,
 
 ![Screenshot](assets/images/prompt_1.png)
 
+### Considerations ###
 - ChatGPT provided more than one name, including the one we were searching for.
 - The answer was detailed: it included the **English** name of the abbey, its **ecclesiastical** name, and additional context like **location**, **dedication to San Silvestro**, **foundation date**, and **diocese**.
   
@@ -107,6 +108,7 @@ This approach was particularly effective with stronger models such as GPT-4. As 
 
 > The Abbazia di Nonantola was commissioned (founded) by Saint Anselm (Anselmo di Nonantola) in 752, with the support of King Aistulf of the Lombards.
 
+### Considerations ###
 •	ChatGPT talks about “commissioner” as a synonym of “founder” and after providing us with a short historical background, it gives us a precise name: Saint Anselm. 
 
 ---
@@ -170,7 +172,7 @@ Q2: Who was the commissioner of the Abbazia di Nonantola? Let’s think step by 
 
 ---
 
-### Evaluation
+### Considerations ###
 
 - This answer is **more complete and historically structured** compared to the previous attempt by Gemini.
 - The mention of **Saint Anselm** finally appears, showing that our few-shot example improved the model's comprehension of the question and expected reasoning.
@@ -234,6 +236,7 @@ translated as: “This place is awesome and full of reverence.”
 ![Screenshot](assets/images/prompt_3.png)  
 ![Screenshot](assets/images/prompt_4.png)
 
+### Considerations ###
 ChatGPT provided **three responses**:
 
 - The **first answer** closely follows the prompt format: it gives a **Latin inscription** and its **translation**.
@@ -249,6 +252,7 @@ This makes the first answer valuable, but shows the model deviated from the expe
 ![Screenshot](assets/images/prompt_6.png)  
 ![Screenshot](assets/images/prompt_7.png)
 
+### Considerations ###
 Gemini followed the structure **more faithfully** than ChatGPT:
 
 - It provided **three distinct Latin inscriptions** from the abbey;
@@ -287,6 +291,7 @@ translated as: “This place is awesome and full of reverence.”
 ![Screenshot](assets/images/prompt_8.png)  
 ![Screenshot](assets/images/prompt_9.png)
 
+### Considerations ###
 - ChatGPT **did not change its strategy** despite the added adjective.
 - It reused the same structure as in Prompt 3.1 and provided **only one new inscription**, in Latin, different from the previous example.
 - Even if the response was not fully aligned with our expectation (structured list of examples), it still provided **a valid inscription**, so we **did not proceed further** with ChatGPT for this step.
@@ -299,6 +304,7 @@ translated as: “This place is awesome and full of reverence.”
 ![Screenshot](assets/images/prompt_11.png)  
 ![Screenshot](assets/images/prompt_12.png)
 
+### Considerations ###
 - Gemini once again followed the few-shot pattern and returned **three epigraphical inscriptions**.
 - However, the **first example was written in Italian**:  
   *"Le alte volte del tempio crollarono nel millecentodiciassettesimo anno dalla nascita del Redentore e quattro anni dopo si cominciò a ricostruirle."*  
