@@ -47,7 +47,7 @@ We tried to build more generic queries to find bigger amounts of information (e.
 Predicates and properties may seem very similar to one another, and many others were difficult to find. 
 
 **✅ Solution:**  
-We created more we designed more specific queries to search for properties related to abbeys in general.
+We designed more specific queries to search for properties related to abbeys in general.
 
 ---
 
