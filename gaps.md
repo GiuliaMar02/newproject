@@ -82,9 +82,7 @@ We clicked on the Agent IRI and discovered the predicate: [a-cd:alternativeName]
 ### Final Consideration
 
 Even though a-cd:alternativeName appears to be a promising solution, we noticed that this property is only applied to persons (e.g., artists). Therefore, this discovery serves as inspiration, but not a direct solution.
-We are now motivated to identify or create a more suitable predicate to represent alternative names for Cultural Properties, which would enable us to add the triple:
-
-Abbazia di Nonantola → hasAlternativeName → “Abbazia di San Silvestro”
+We are now motivated to identify or create a more suitable predicate to represent alternative names for Cultural Properties.
 
 ## 2. Identification of the Second Gap
 
