@@ -54,3 +54,9 @@ Our project followed a structured and multi-step methodology to explore and enri
 
 11. **Publishing Online**  
    The final website was published as an open educational resource, enabling others to explore and reuse our findings.
+
+<hr>
+<div style="display: flex; justify-content: space-between; margin-top: 2em;">
+  <a href="topic.html">← Previous</a>
+  <a href="sparql.html">Next →</a>
+</div>
