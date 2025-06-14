@@ -60,12 +60,13 @@ We refined our prompt strategies according to the **three required techniques** 
 
 ---
 
-### 🏛️ Selecting an Appropriate IRI that could represent the topic
+## 🏛️ Selecting an Appropriate IRI that could represent the topic
 
-To enrich the cultural data, we needed to choose the most suitable IRI to represent the **[Abbazia di Nonantola](https://w3id.org/arco/resource/HistoricOrArtisticProperty/0100210793)**. However, only two relevant IRIs were found through Query 2.
+To enrich the cultural data, we needed to choose the most suitable IRI to represent the [Abbazia di Nonantola](https://w3id.org/arco/resource/HistoricOrArtisticProperty/0100210793). However, only two relevant IRIs were found through Query 2.
+Our topic is an immovable cultural property, hence there are only visual representations in the ArCo Ontology. Moreover, finding the second IRI ([https://w3id.org/arco/resource/PhotographicHeritage/0800634107](https://w3id.org/arco/resource/PhotographicHeritage/0800634107)) for the [Abbazia di Nonantola](https://w3id.org/arco/resource/HistoricOrArtisticProperty/0100210793) was quite challenging since there was no reference to the Abbazia whatsoever in the title of the cultural property.
 
-**✅ Solution:**  
-We chose as IRI of the Abbazia di Nonantola two IRIs. For the first two triples we used the IRI of the photo of the absidal part but we didn’t chose the same IRI for the other triples (3 and 4) because we were looking at the front part of the abbey.
+**✅ Solution:** 
+We chose two IRIs of the [Abbazia di Nonantola](https://w3id.org/arco/resource/HistoricOrArtisticProperty/0100210793). For the first two triples we used the IRI of the photo of the absidal part, but we didn’t choose the same IRI for the other triples (3 and 4) because we were looking at the front part of the abbey.
 
 ---
 
