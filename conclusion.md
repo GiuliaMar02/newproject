@@ -52,3 +52,8 @@ This project opens the door to several possibilities for future enrichment:
 ---
 
 Through this project, we gained hands-on experience in **semantic enrichment**, **data querying**, and **LLM prompting**, while contributing to the visibility of a lesser-known yet historically significant cultural site.
+
+<hr>
+<div style="display: flex; justify-content: flex-start; margin-top: 2em;">
+  <a href="challenges.html">← Previous</a>
+</div>
