@@ -280,3 +280,9 @@ Among the missing aspects we looked for were:
 - Historical function or symbolic meaning
 
 ### 📌 A full discussion of this analysis is available in the section: [Identifying Gaps](gaps.md) page.
+
+<hr>
+<div style="display: flex; justify-content: space-between; margin-top: 2em;">
+  <a href="methodology.html">← Previous</a>
+  <a href="gaps.html">Next →</a>
+</div>
