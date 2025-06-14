@@ -80,3 +80,9 @@ Despite losing approximately **1.5 days** of work, we resumed our tasks as soon 
 ---
 
 Each of these challenges helped us gain deeper insight into semantic web technologies, LLM prompting strategies, and the complexities of digital cultural heritage enrichment.
+
+<hr>
+<div style="display: flex; justify-content: space-between; margin-top: 2em;">
+  <a href="rdf.html">← Previous</a>
+  <a href="conclusion.html">Next →</a>
+</div>
