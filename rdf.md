@@ -387,7 +387,7 @@ N.B: in this case, we haven’t provided any examples before making our request 
 
 *Triple 3.1 - `a-dd:hasAffixedElement`*
 
-> Subject: [https://w3id.org/arco/resource/HistoricOrArtisticProperty/0100210793](https://dati.beniculturali.it/lodview-arco/resource/HistoricOrArtisticProperty/0100210793.html)
+> Subject: [https://w3id.org/arco/resource/PhotographicHeritage/0800634107](https://w3id.org/arco/resource/PhotographicHeritage/0800634107)
 > 
 > Predicate: `a-dd:hasAffixedElement`
 > 
@@ -395,7 +395,7 @@ N.B: in this case, we haven’t provided any examples before making our request 
 
 *Triple 3.2 - `a-dd:hasAffixedElement`*
 
-> Subject: [https://w3id.org/arco/resource/HistoricOrArtisticProperty/0100210793](https://dati.beniculturali.it/lodview-arco/resource/HistoricOrArtisticProperty/0100210793.html)
+> Subject: [https://w3id.org/arco/resource/PhotographicHeritage/0800634107](https://w3id.org/arco/resource/PhotographicHeritage/0800634107)
 > 
 > Predicate: `a-dd:hasAffixedElement`
 > 
