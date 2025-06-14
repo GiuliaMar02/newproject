@@ -240,7 +240,7 @@ Astolfo and Anselmo, whose IRI led us to the following predicate: [arco:isCultur
 
 ![result](assets/images/gaps_12.png)
 
-We observed that [Astolfo and Anselmo](https://dati.beniculturali.it/lodview-arco/resource/HistoricOrArtisticProperty/0800221017-1_13.html) is a component of the cultural property “Portale” (Portal).
+We observed that [Astolfo and Anselmo](https://dati.beniculturali.it/lodview-arco/resource/HistoricOrArtisticProperty/0800221017-1_13.html) is a component of the cultural property [“Portale” (Portal)](https://w3id.org/arco/resource/HistoricOrArtisticProperty/0800221017-0).
 
 However, the description found in the IRI of Portale mentions the Abbey and the Coverage class indicates Nonantola, but there is no clear or explicit triple connecting this portal directly to the Abbazia di Nonantola.
 
