@@ -45,7 +45,6 @@ This finding contradicted our initial expectations and showed the importance of 
 
 This project opens the door to several possibilities for future enrichment:
 - **New RDF triples** (especially regarding the abbey’s inscriptions) could be integrated into ArCo to enhance its current representation of **[Abbazia di Nonantola](https://w3id.org/arco/resource/HistoricOrArtisticProperty/0100210793)**.
-- A more **complete and unified IRI** for the abbey as a **"Historic Cultural Property"** could be introduced to improve data linkage.
 - Furthermore, the ontology could be further enriched with more accurate depictions of the abbey, directly connected to an **IRI about Abbazia di Nonantola as “Architectural or Landscape heritage”** or as an **“Immovable cultural property”**.
 
 
