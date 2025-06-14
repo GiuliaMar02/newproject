@@ -252,6 +252,7 @@ However, the description found in the IRI of Portale mentions the Abbey and the 
 
 This reveals a fourth gap: the missing relation between components and the Abbey.
 
-To be more semantically precise, we propose to create a new triple in ArCo that explicitly connects the [IRI Portale](https://dati.beniculturali.it/lodview-arco/resource/HistoricOrArtisticProperty/0800221017-0.html) to the Abbey of Nonantola using the predicate:[arco:isCulturalPropertyComponentOf](https://dati.beniculturali.it/lodview-arco/ontology/arco/isCulturalPropertyComponentOf)
+To be more semantically precise, we thought to create a new triple in ArCo that explicitly connects the [IRI Portale](https://dati.beniculturali.it/lodview-arco/resource/HistoricOrArtisticProperty/0800221017-0.html) to the Abbey of Nonantola using the predicate:[arco:isCulturalPropertyComponentOf](https://dati.beniculturali.it/lodview-arco/ontology/arco/isCulturalPropertyComponentOf)
 
-This would enrich the knowledge graph by strengthening the structural hierarchy of components within the Abbey.
+
+however, before creating a new triple, we wanted to ask the LLMs to verify if there are other abbeys in Nonantola, and in the case of a negative answer we will be sure that the general reference to an “abbey” is our abbey.  
