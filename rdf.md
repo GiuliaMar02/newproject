@@ -409,6 +409,11 @@ N.B: in this case, we haven’t provided any examples before making our request 
 > 
 > Object: [https://w3id.org/arco/resource/PhotographicHeritage/0800634107](https://dati.beniculturali.it/lodview-arco/resource/PhotographicHeritage/0800634107.html)
 
+<hr>
+<div style="display: flex; justify-content: space-between; margin-top: 2em;">
+  <a href="prompts.html">← Previous</a>
+  <a href="challenges.html">Next →</a>
+</div>
 
 
 
