@@ -235,6 +235,7 @@ This led us to design a more specific query focusing on the vocabulary of proper
 ---
 
 ## Query 6 — Investigating used properties for “abbazia”
+<a id="query6"></a>
 
 The aim of this query was to understand **which properties and values** are commonly used to describe entities labeled as **"abbazia"** in the ArCo dataset. This would help us identify **vocabulary** we might use to enrich the description of **Abbazia di Nonantola**.
 
