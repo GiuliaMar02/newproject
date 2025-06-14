@@ -41,3 +41,9 @@ We selected Abbazia di Nonantola for this project because:
 
 - To explore the **ArCo ontologies** using the official SPARQL endpoint in order to extract relevant and meaningful information about the abbey  
 - To use **Large Language Models (LLMs)** such as Gemini and ChatGPT to produce new knowledge and propose **RDF triples** that could enrich the ArCo Knowledge Graph
+
+<hr>
+<div style="display: flex; justify-content: space-between; margin-top: 2em;">
+  <a href="index.html">← Previous</a>
+  <a href="methodology.html">Next →</a>
+</div>
