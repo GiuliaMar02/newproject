@@ -256,3 +256,9 @@ To be more semantically precise, we thought to create a new triple in ArCo that 
 
 
 however, before creating a new triple, we wanted to ask the LLMs to verify if there are other abbeys in Nonantola, and in the case of a negative answer we will be sure that the general reference to an “abbey” is our abbey.  
+
+<hr>
+<div style="display: flex; justify-content: space-between; margin-top: 2em;">
+  <a href="sparql.html">← Previous</a>
+  <a href="prompts.html">Next →</a>
+</div>
