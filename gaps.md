@@ -86,7 +86,7 @@ We are now motivated to identify or create a more suitable predicate to represen
 
 ## 2. Identification of the Second Gap
 
-Based on the results of **Query 6**, we were able to find a predicate **“hasCommission”**.
+Based on the results of **[Query 6](sparql.html#query6)**, we were able to find a predicate **“hasCommission”**.
 
 Specifically, we noticed that many abbeys contain the predicate `arco:hasCommission`, while our abbey does not. This suggests a **missing piece of information** regarding **who commissioned** the abbey.
 
