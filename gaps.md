@@ -173,7 +173,7 @@ WHERE {
 
 ![result](assets/images/gaps_9.png)
 
-From the results, we identified the property arco:hasAffixedElement, which refers to inscriptions or other affixed elements.
+From the results, we identified the property [arco:hasAffixedElement](https://dati.beniculturali.it/lodview-arco/ontology/arco/isCulturalPropertyComponentOf), which refers to inscriptions or other affixed elements.
 
 ### Inspection of Related IRIs
 By clicking on one of the affixed element IRIs — specifically, [Iscrizione 1](https://dati.beniculturali.it/lodview-arco/resource/Inscription/0900476442-inscription-1.html) — we explored how ArCo models inscriptions:
