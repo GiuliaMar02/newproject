@@ -370,4 +370,9 @@ This is where **zero-shot** is at its best:
 - However, when **guided by few-shot prompting**, [Gemini](https://gemini.google.com/) proves to be capable of answering correctly and precisely, following the structure of the prompt (see third missing information). [ChatGPT](https://chat.openai.com/), in contrast, doesn’t always follow the format consistently.
 - [Gemini](https://gemini.google.com/) usually includes **images and links**, while [ChatGPT](https://chat.openai.com/) includes **source links** to the websites used for its responses.
 
----
+<hr>
+<div style="display: flex; justify-content: space-between; margin-top: 2em;">
+  <a href="gaps.html">← Previous</a>
+  <a href="rdf.html">Next →</a>
+</div>
+
