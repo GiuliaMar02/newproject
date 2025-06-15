@@ -33,8 +33,8 @@ SPARQL and the [ArCo](http://wit.istc.cnr.it/arco/?lang=en) ontology proved to b
 ### 🤖 Large Language Models
 
 Our work with LLMs, particularly **[ChatGPT](https://chatgpt.com/)** and **[Gemini](https://gemini.google.com/app)**, revealed the strengths and weaknesses of both systems:
-- Theytend to perform better through **prompting techniques** that use examples, structured input, and clear task definitions (especially **few-shot** and **chain-of-thought**).
--However, when looking for vey specific information, the LLMs do not always provide the correct answer. **[ChatGPT](https://chatgpt.com/)** often appeared more fluent and logically structured, especially in **chain-of-thought** tasks.
+- They tend to perform better through **prompting techniques** that use examples, structured input, and clear task definitions (especially **few-shot** and **chain-of-thought**).
+- However, when looking for vey specific information, the LLMs do not always provide the correct answer. **[ChatGPT](https://chatgpt.com/)** often appeared more fluent and logically structured, especially in **chain-of-thought** tasks.
 - Moreover, though **[ChatGPT](https://chatgpt.com/)** may appear more efficient and “intelligent” when answering questions, especially with the chain-of-thought technique,  **[Gemini](https://gemini.google.com/app)** performs better than [ChatGPT](https://chatgpt.com/) when guided by well-structured prompting techniques, such as the few-shot technique. 
 
 This finding contradicted our initial expectations and showed the importance of **model-specific prompting** strategies in both of the LLMs.
