@@ -88,7 +88,7 @@ WHERE {
 ```
 
 ### ✅ Results
-The query returned the same IRIs found in Query 1, but this time it included depictions. These are useful for enriching the knowledge graph with visual content.
+The query returned the same IRIs found in Query 1, but this time it included depictions.
 
 ### 📸 Screenshot of Results
 
