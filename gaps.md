@@ -75,14 +75,14 @@ From the results, we found the IRI of Michelangelo Buonarroti as an Agent:
 
 ![Result](assets/images/gaps_2.png)
 
-We clicked on the Agent IRI and discovered the predicate: [a-cd:alternativeName](https://dati.beniculturali.it/lodview-arco-onto/ontology/context-description/alternativeName.html)
+We clicked on the Agent IRI and discovered the property: [a-cd:alternativeName](https://dati.beniculturali.it/lodview-arco-onto/ontology/context-description/alternativeName.html)
 
 ![Result](assets/images/gaps_3.png)
 
 ### Final Consideration
 
 Even though a-cd:alternativeName appears to be a promising solution, we noticed that this property is only applied to persons (e.g., artists). Therefore, this discovery serves as inspiration, but not a direct solution.
-We are now motivated to identify or create a more suitable predicate to represent alternative names for Cultural Properties.
+We are now motivated to identify or create a more suitable property to represent alternative names for Cultural Properties.
 
 ## 2. Identification of the Second Gap
 
