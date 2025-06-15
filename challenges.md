@@ -62,11 +62,11 @@ We refined our prompt strategies according to the **three required techniques** 
 
 ## 🏛️ Selecting an Appropriate IRI that could represent the topic
 
-To enrich the cultural data, we needed to choose the most suitable IRI to represent the [Abbazia di Nonantola](https://w3id.org/arco/resource/HistoricOrArtisticProperty/0100210793). However, only two relevant IRIs were found through Query 2.
-Our topic is an immovable cultural property, hence there are only visual representations in the ArCo Ontology. Moreover, finding the second IRI ([https://w3id.org/arco/resource/PhotographicHeritage/0800634107](https://w3id.org/arco/resource/PhotographicHeritage/0800634107)) for the [Abbazia di Nonantola](https://w3id.org/arco/resource/HistoricOrArtisticProperty/0100210793) was quite challenging since there was no reference to the Abbazia whatsoever in the title of the cultural property.
+To enrich the cultural data, we needed to choose the most suitable IRI to represent the Abbazia di Nonantola. However, of the two IRIs found through Query 2, only one shows the abbey as an architectural complex, the other is an affixed element. Furthermore, our topic is an immovable cultural property that is not directly represented in ArCo as such; we were only able to find representations of it.
+Also finding the second IRI we used for our triples ([https://w3id.org/arco/resource/PhotographicHeritage/0800634107](https://w3id.org/arco/resource/PhotographicHeritage/0800634107)) to represent the Abbazia di Nonantola was quite challenging since there was no reference to the Abbazia whatsoever in the title of the cultural property.
 
 **✅ Solution:** 
-We chose two IRIs of the [Abbazia di Nonantola](https://w3id.org/arco/resource/HistoricOrArtisticProperty/0100210793). For the first two triples we used the IRI of the photo of the absidal part, but we didn’t choose the same IRI for the other triples (3 and 4) because we were looking at the front part of the abbey.
+We chose two IRIs of the Abbazia di Nonantola. For the first two triples we used the IRI of the photo of the [absidal part](https://w3id.org/arco/resource/HistoricOrArtisticProperty/0100210793), but we didn’t choose the same IRI for the other triples (3 and 4) because we were looking at the [front part of the abbey](https://w3id.org/arco/resource/PhotographicHeritage/0800634107).
 
 ---
 
