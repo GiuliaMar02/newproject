@@ -186,8 +186,7 @@ WHERE {
 ```
 
 ### ✅ Results
-The query returned the same two IRIs found in Query 1, which means that "Abbazia di San Silvestro" does not exist as a Cultural Property (cp), only as a Subject (as seen in Query 3). This confirms that ArCo represents only one cultural property under the IRI for Abbazia di Nonantola.
-
+The query returned the same two IRIs found in Query 1, which means that "Abbazia di San Silvestro" does not exist as a Cultural Property (cp), only as a Subject (as seen in Query 3).
 ---
 
 ## Query 5 — General search for “Abbazia” entities
