@@ -43,7 +43,7 @@ WHERE {
 ![Result](assets/images/gaps_false.png)
 
 The answer is false.
-This confirms that the official name of our cultural property is Abbazia di Nonantola, and that Abbazia di San Silvestro — found in Query 3 as a Subject — is only an alternative name.
+This suggests that the official name of our cultural property is Abbazia di Nonantola, and that Abbazia di San Silvestro — found in Query 3 as a Subject — is maybe only an alternative name.
 
 Then, we wanted to find out whether ArCo contains a **predicate** suitable for expressing the triple:
 
