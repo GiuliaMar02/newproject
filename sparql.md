@@ -133,8 +133,8 @@ WHERE {
 ```
 
 ### ✅ Results
-Thanks to this query, we found that the Abbazia di Nonantola is also known as "Abbazia di San Silvestro".
-This alternative name is highly relevant and valuable for enriching its semantic description in the knowledge graph.
+Thanks to this query, we found that the Abbazia di Nonantola may also be known as "Abbazia di San Silvestro".
+This possible alternative name could be highly relevant and valuable for enriching its semantic description in the knowledge graph.
 
 ### 🖼️ Screenshot of Results
 
