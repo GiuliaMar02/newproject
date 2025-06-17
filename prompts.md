@@ -259,7 +259,7 @@ This makes the first answer valuable, but shows the model deviated from the expe
 ### Considerations ###
 Gemini followed the structure **more faithfully** than ChatGPT:
 
-- It provided **three distinct Latin inscriptions** from the abbey;
+- It provided **three distinct inscriptions** from the abbey;
 - Each was accompanied by an **English translation**, precisely as modeled in the examples;
 - This confirms the **effectiveness of few-shot prompting** when we need detailed and structured data.
 
