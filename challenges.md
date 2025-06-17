@@ -38,7 +38,7 @@ We examined existing SPARQL patterns and learned how to use key expressions such
 The results of our queries gave us few information about our abbey, something that made the research of the gaps more difficult.
 
 **✅ Solution:**  
-We tried to build more generic queries to find bigger amounts of information (e.g.: the query where we lo oked for cultural properties in Nonantola).
+We tried to build more generic queries to find bigger amounts of information (e.g.: the query where we looked for cultural properties in Nonantola).
 
 ---
 
