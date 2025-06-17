@@ -116,9 +116,11 @@ This approach was particularly effective with stronger models such as GPT-4. As 
 ### [Gemini](https://gemini.google.com/)
 
 > The term "commissioner" in relation to the Abbazia di Nonantola can refer to different roles throughout its long history, especially considering periods where the abbey was managed by commendatory abbots.
+> 
 > Here's a breakdown:
 > 
 > •	Abbots Commendatory: From 1449 onwards, the Abbey of Nonantola saw the beginning of the "Commenda" system. This meant that the abbot, known as an abbot commendatory (abate commendatario), was not necessarily a resident monk but an external figure, often appointed by the Pope or a secular ruler, who received the revenues of the abbey. These commendatory abbots effectively "commissioned" or oversaw the abbey's administration and assets, although their involvement in the spiritual life of the monastery varied greatly.
+> 
 > Notable commendatory abbots included:
 > 
 > •	Gurone d'Este (1449–1484)
